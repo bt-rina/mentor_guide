@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>멘토링 업무 가이드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================
+     HEADER
+============================================ -->
+<header>
+  <div class="badge">bluetiger · mentor</div>
+  <h1>멘토링 업무<br><em>핵심 가이드</em></h1>
+  <p>멘토링 시작 전 꼭 숙지해야 할 사항이 업무 순서대로 정리되어 있습니다.<br>차근차근 따라오시면 됩니다.</br></p>
+  <!-- <div class="hero-btns">
+    <a href="#section-1" class="btn btn-primary">첫 번째 버튼</a>
+    <a href="#section-2" class="btn btn-outline">두 번째 버튼</a>
+  </div> -->
+  <div class="header-search">
+    <input type="text" id="search-input" class="search-input" placeholder="🔍 검색하기...">
+    <div id="search-results" class="search-results"></div>
+  </div>
+</header>
+
+  <div style="width:100%;height:1px;background:rgba(0, 0, 0, 0.15);"></div>
+
+
+<div class="page-body">
+
+  <!-- ==========================================
+       LEFT SIDEBAR
+  ========================================== -->
+  <aside class="sidebar">
+    
+    <div class="sidebar-label">INDEX</div>
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li><a href="#section-1" data-section="section-1"><span class="nav-step">1️⃣</span>기본 사항</a></li>
+      <li><a href="#section-2" data-section="section-2"><span class="nav-step">2️⃣</span>개강일 멘토링 OT</a></li>
+      <li><a href="#section-3" data-section="section-3"><span class="nav-step">3️⃣</span>강의 내용 숙지 및 과제 점검</a></li>
+      <li><a href="#section-4" data-section="section-4"><span class="nav-step">4️⃣</span>멘토링 진행</a></li>
+      <li><a href="#section-5" data-section="section-5"><span class="nav-step">5️⃣</span>수강생 독려</a></li>
+      <li><a href="#checklist" data-section="checklist"><span class="nav-step">✅</span>체크리스트</a></li>
+      <li><a href="#faq"       data-section="faq">      <span class="nav-step">❓</span>자주 묻는 질문</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+
+    <!-- ========================================
+         SECTION 1
+    ======================================== -->
+    <section id="section-1">
+      <div class="container">
+        <div class="section-label">Step 1</div>
+        <h2>기본 사항</h2>
+        <h3 class="section-subheading">멘토님 역할</h3>
+        <div style="color:var(--text2);margin-bottom:28px;display:flex;flex-direction:column;gap:16px;">
+          <div>
+            <div style="font-weight:700;margin-bottom:8px;">1. 멘토링 수업</div>
+            <ul class="bullet-list">
+              <li>사전에 제출된 과제 검토 및 피드백 준비를 합니다.</li>
+              <li>zoom을 통한 주1회 온라인 멘토링 수업을 진행합니다.</li>
+            </ul>
+          </div>
+          <div>
+            <div style="font-weight:700;margin-bottom:8px;">2. 수강생 학습 독려</div>
+            <ul class="bullet-list">
+              <li>출석 및 과제 제출을 독려합니다.</li>
+              <li>과제 수행 중 궁금한 점에 대해 실무 노하우를 살려 답변합니다.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>클래스 용어</h3>
+        <div class="quality-grid">
+
+          <div class="quality-card">
+            <!-- <div class="label">항목 이름</div> -->
+            <div class="value">정규수업</div>
+            <div class="sub">
+              <ul>
+                <li>연사님의 커리큘럼 녹화 강의입니다.</li>
+                <li>과제 수행에 필요한 이론 설명, 예제 실습 등의 내용으로 이루어집니다.</li>
+                <li>강의를 기반으로 해당 주차의 과제가 제시됩니다.</li>
+                <li>수강생은 매주 1-2회 정해진 일시에 정규수업 강의를 시청합니다.</li>
+                <li>해당 주차의 출석이 반영되면, 이후에는 강의를 계속 복습할 수 있습니다.</li>
+              </ul>
+            </div>
+            <!-- <div class="tag">필수</div> -->
+          </div>
+
+          <div class="quality-card">
+            <div class="value">멘토링 수업</div>
+            <div class="sub">
+              <ul>
+                <li>멘토님이 수강생의 과제를 1:1로 피드백하는 실시간 수업입니다. 디스코드 음성 채널에서 진행됩니다.</li>
+                <li>수강생은 실무 노하우, 레퍼런스와 관련 참고자료를 공유 받을 수 있습니다.</li>
+                <li>수강생 1명당 12분 내외의 시간이 배정됩니다.</li>
+                <li>본인의 피드백을 받은 후에는 즉시 퇴장하지 않으며, 다른 수강생의 과제와 피드백까지 참고합니다.</li>
+              </ul>
+              
+            </div>
+          </div>
+
+          <div class="quality-card">
+            <div class="value">디스코드 소통 채널</div>
+            <div class="sub">
+              <ul>
+                <li>멘토님과 담당 수강생 간 소통을 위한 대화방(텍스트 채널)입니다.</li>
+                <li>담당 수강생에게 수업 관련 공지사항과 과제 진행 등의 참여 독려 메시지를 전달합니다.</li>
+                <li>수강생은 소통 채널을 통해 과제에 대해 궁금한 점을 멘토님께 질문합니다.</li>
+                <li>디스코드 채널은 개강 1주 전 입장할 수 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="quality-card">
+            <div class="value">LMS</div>
+            <div class="label">학습 관리 시스템</div>
+            <div class="sub">
+              <ul>
+                <li>수강생이 정규수업을 수강하고, 과제를 제출하는 플랫폼입니다.</li>
+                <li>멘토님은 LMS 사이트 내 담당하는 클래스의 강의실에 접속하여 강의 영상을 미리 숙지하실 수 있습니다.</li>
+                <li>멘토님은 LMS 통합교육관리시스템에서 과제를 사전 점검할 수 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="quality-card">
+            <div class="value">스터디윗미</div>
+            <div class="sub">
+              <ul>
+                <li>24시간 접속 가능한 온라인 자습실입니다.</li>
+                <li>수강생은 정규수업 시청 및 과제 수행 시 스터디윗미에 참여할 수 있습니다.</li>
+                <li>같은 반 수강생과 함께 접속하여 과제를 수행하며 수강 의지를 유지할 수 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <div class="quality-card">
+            <div class="value">종강 세션</div>
+            <div class="sub">
+              종강일에는 아래 두가지 기준을 바탕으로 우수자를 선정하여 연사님의 피드백이 진행됩니다.
+              <ul>
+                <li>8주차 과제 제출자 중</li>
+                <li>진도율이 높은 순으로 3~5명 선정</li>                
+              </ul>
+              <div class="alert alert-danger">
+                <span>종강일 세션이 진행되지 않는 클래스가 있으니 본 세션에 대한 언급은 유의 부탁드립니다.</span>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+        <h3 class="section-subheading" style="margin-top:48px;">사전 필수 준비사항</h3>
+        <p style="color:var(--text2);margin-bottom:24px;font-size:14px;">멘토링 녹화를 위한 환경 세팅입니다. <strong>최초 1회만</strong> 진행하면 됩니다.<br>(총 소요 시간: 약 15분)</p>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>STEP 1 · OBS Studio 설치</h3>
+            <div style="font-weight:700;margin-bottom:8px;font-size:13px;color:var(--text3);">Windows</div>
+            <ul class="bullet-list">
+              <li><span class="li-main"><a href="https://obsproject.com/download" target="_blank">obsproject.com/download</a> 접속 후 Windows 버전 다운로드 및 설치</span></li>
+              <li><span class="li-main">설치 중 "최적화 마법사"가 나오면 취소 (전용 커스텀 프로필을 설정할 예정입니다.)</span></li>
+            </ul>
+            <div style="font-weight:700;margin:16px 0 8px;font-size:13px;color:var(--text3);">Mac</div>
+            <ul class="bullet-list">
+              <li><span class="li-main"><a href="https://obsproject.com/download" target="_blank">obsproject.com/download</a> 접속 후 macOS 버전 다운로드, Applications 폴더에 드래그</span></li>
+              <li><span class="li-main">첫 실행 시 아래 4가지 권한 필수 허용 (시스템 설정 &gt; 개인정보 보호 및 보안)</span>
+                <ul>
+                  <li>화면 및 시스템 오디오 녹음 &gt; OBS 체크</li>
+                  <li>마이크 &gt; OBS 체크</li>
+                  <li>입력 모니터링 &gt; OBS 체크</li>
+                  <li>손쉬운 사용 &gt; OBS 체크</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>STEP 2 · OBS 프로필 가져오기</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">이 가이드와 함께 받은 "블루타이거_멘토링" 폴더를 준비합니다.</span></li>
+              <li><span class="li-main">OBS 상단 메뉴 &gt; 프로파일(Profile) &gt; 가져오기(Import)</span></li>
+              <li><span class="li-main">"블루타이거_멘토링" 폴더 선택 &gt; ini 파일 열기</span></li>
+              <li><span class="li-main">프로파일(Profile) 메뉴 재선택 &gt; "블루타이거 멘토링" 선택</span></li>
+            </ul>
+            <div class="alert alert-info">
+              <span class="alert-icon">💡</span>
+              <span>위 설정으로 1080p/30fps, 고품질 녹화, F9 단축키가 모두 설정됩니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>STEP 3 · Google Drive 데스크톱 앱 설치</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main"><a href="https://www.google.com/drive/download/" target="_blank">google.com/drive/download</a> 접속 후 "데스크톱용 Drive 다운로드" 클릭 &gt; 설치</span></li>
+              <li><span class="li-main">설치 후 Google 계정으로 로그인</span></li>
+              <li><span class="li-main">로그인 후 공유 드라이브 경로 확인</span>
+                <ul>
+                  <li>Mac: /Volumes/GoogleDrive/Shared drives/[bluetiger] 멘토링 녹화본/성함</li>
+                  <li>Windows: G:\Shared drives\[bluetiger] 멘토링 녹화본\성함</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="alert alert-warn">
+              <span class="alert-icon">⚠️</span>
+              <span>공유 드라이브 확인 불가 시 운영팀에 문의해 주세요.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>STEP 4 · OBS 녹화 경로 변경</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">OBS 우측 하단 제어 패널의 "설정(Settings)" 버튼 클릭</span></li>
+              <li><span class="li-main">출력(Output) 탭 &gt; "녹화 저장 경로(Recording Path)" 항목 찾기</span></li>
+              <li><span class="li-main">"찾아보기(Browse)" 클릭 후 공유 드라이브 내 저장 폴더로 이동</span>
+                <ul>
+                  <li>Mac: Google Drive &gt; Shared drives &gt; 드라이브이름 &gt; 성함으로 된 폴더</li>
+                  <li>Windows: G:\Shared drives\드라이브이름\성함으로 된 폴더</li>
+                </ul>
+              </li>
+              <li><span class="li-main">"적용(Apply)" &gt; "확인(OK)"</span></li>
+            </ul>
+            <div class="alert alert-warn">
+              <span class="alert-icon">⚠️</span>
+              <span>해당하시는 폴더가 없을 경우, 공유 드라이브 안에서 우클릭 &gt; 새 폴더로 직접 만들어주세요. 
+                <br>녹화본의 정상 저장을 위해, 해당 폴더는 <strong>링크가 있는 모든 사용자의 편집자(관리자) 권한</strong>으로 설정해 주세요.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>STEP 5 · 화면 캡처 소스 추가</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">OBS 하단 "소스 목록(Sources)" 패널 하단의 "+" 클릭 &gt; "화면 캡처(Display Capture)" 선택</span></li>
+              <li><span class="li-main">디스플레이 캡처 &gt; 디스코드가 표시될 디스플레이 선택</span></li>
+              <li><span class="li-main">OBS 하단 오디오 믹서에서 동작 확인</span>
+                <ul>
+                  <li>"데스크톱 오디오" : 디스코드 소리 재생 시 초록색 바가 움직이면 OK</li>
+                  <li>"마이크" : 말할 때 초록색 바가 움직이면 OK</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="alert alert-info">
+              <span class="alert-icon">💡</span>
+              <ul class="bullet-list" style="color:inherit;">
+                <li><span class="li-main">Mac에서 화면 캡처가 검은색으로 나오는 경우: 시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 화면 및 시스템 오디오 녹음에서 OBS 권한을 껐다 킨 후, OBS를 완전 종료(⌘Q) 후 재시작해 주세요.</span></li>
+                <li><span class="li-main">캡처 화면이 잘리거나 크기가 맞지 않는 경우: 소스 우클릭 &gt; 변환 &gt; "화면에 맞추기"를 선택하면 전체 화면 크기에 맞게 조정됩니다.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>녹화 방법 (세팅 완료 후)</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">OBS가 실행 중인지 확인 (백그라운드에 있어도 OK)</span></li>
+              <li><span class="li-main">디스코드 음성 채널 입장 후 <strong>F9</strong> 키를 눌러 녹화 시작</span>
+                <ul>
+                  <li>Mac에서는 <strong>fn + F9</strong>를 눌러야 합니다</li>
+                  <li>OBS 하단에 "녹화 중" + 시간 카운터가 표시되면 정상 녹화 중</li>
+                </ul>
+              </li>
+              <li><span class="li-main">멘토링 종료 후 동일하게 <strong>F9</strong> (Mac: <strong>fn + F9</strong>)를 눌러 녹화 종료</span></li>
+              <li><span class="li-main">녹화본은 공유 드라이브의 멘토님 전용 폴더에 자동으로 업로드됩니다.</span></li>
+            </ul>
+            <div class="alert alert-warn">
+              <span class="alert-icon">⚠️</span>
+              <span>업로드 완료 전에 PC를 종료하면 업로드가 중단될 수 있습니다. Google Drive 앱이 백그라운드에서 자동 업로드하므로 PC를 사용하면서 기다리셔도 됩니다.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>녹화본 파일 관리</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">파일명은 녹화 시작 시점 기준으로 설정됩니다. 여러 클래스를 담당하시는 경우 녹화 날짜로 클래스를 구분할 수 있습니다.</span></li>
+              <li><span class="li-main">파일명을 직접 수정하시거나, 멘토님 폴더 아래 클래스별 하위 폴더를 만들어 정리하셔도 됩니다.</span></li>
+              <li><span class="li-main">웹 접속 시 드라이브 링크에 영상이 보이지 않는 경우, 드라이브 앱에서 동기화 상태를 확인해 주세요. 앱에서 동기화가 완료되면 링크에서도 확인할 수 있습니다.</span></li>
+              <li><span class="li-main">드라이브 업로드 후 영상 처리에 시간이 소요될 수 있습니다.</span></li>
+              <li><span class="li-main">영상 링크 공유가 필요하실 경우, 드라이브 전체 링크가 아닌 <strong>멘토님 전용 폴더의 링크</strong>를 공유해 주세요.</span></li>
+            </ul>
+            <div class="alert alert-danger" style="margin-top:20px;">
+              <span class="alert-icon">🎥</span>
+              <span>멘토링 녹화는 <strong>매주 빠짐없이</strong> 진행해 주세요. 녹화가 누락될 경우 수강생에게 제공되어야 할 복습 자료가 소실됩니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card mission-card">
+          <div class="step-body">
+            <h3 style="color:var(--accent2);">🎯 멘토님 미션 · 녹화 테스트 제출 <span style="font-size:12px;font-weight:600;color:var(--text3);">(최초 1회)</span></h3>
+            <p style="font-size:14px;color:var(--text2);margin-bottom:16px;">세팅이 완료되면 아래 조건으로 자유롭게 테스트 녹화를 진행하신 후, 공유 드라이브 내 <strong>녹화 테스트</strong> 폴더에 업로드해 주세요.</p>
+            <ul class="bullet-list">
+              <li><span class="li-main">녹화 시간: <strong>3분 이상</strong></span></li>
+              <li><span class="li-main">확인 항목: 스피커(미디어 재생 출력) · 마이크 · 캠(얼굴 및 디스코드 화면 공유 등) 모두 정상 녹화 여부</span></li>
+              <li><span class="li-main">업로드 위치: 공유 드라이브 &gt; 녹화 테스트 폴더</span></li>
+            </ul>
+            <div class="alert alert-accent2" style="margin-top:16px;">
+              <span class="alert-icon">📅</span>
+              <span>제출 기한: <strong>개강 3일 전</strong>까지
+                <br>미제출 시 운영팀이 별도 확인 연락을 드릴 예정입니다.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         SECTION 2 개강일 멘토링 오티
+    ======================================== -->
+    <section id="section-2">
+      <div class="container">
+        <div class="section-label">Step 2</div>
+        <h2>개강일 멘토링 OT</h2>
+
+        <div class="flow">
+          <div class="flow-step">
+            <div class="fs-icon">🙋</div>
+            <div class="fs-label">첫 인사 및 자기소개 작성</div>
+            <div class="fs-sub">
+              <strong>[💬디스코드 소통 채널]</strong>
+              <br>담당 수강생과 인사를 나눕니다.
+              <br><strong>[LMS 사이트]</strong>
+              <br>강의실 내 자유게시판에 자기소개를 작성합니다.
+            </div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="fs-icon">🧑‍💻</div>
+            <div class="fs-label">OT 자료 확인 및 준비</div>
+            <div class="fs-sub">
+              <strong>[구글 슬라이드 접속]</strong>
+              <br>하단 버튼을 클릭하여 자료를 확인합니다.
+              <br>자료 다운로드 후 멘토님 소개, 디자인 등을 수정하셔도 됩니다.
+              <br>자료는 매기수 업데이트될 수 있습니다.
+            </div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="fs-icon">🧑‍🏫</div>
+            <div class="fs-label">OT 진행</div>
+            <div class="fs-sub">
+              [20분]
+              <br>OT 자료를 이용해 멘토링 참여 및 과제 제출에 대해 설명합니다.
+              <br>[10분]
+              <br>자기소개와 자유 Q&A를 진행합니다.
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>1. OT 1시간 전</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">OT 진행 일시를 디스코드 소통 채널에 전달하여 모든 수강생이 빠짐없이 참여하도록 독려합니다.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>2. OT 진행</h3>
+            <ul class="bullet-list">
+              <li>
+                <span class="li-main">(1) 📹 10분 전 음성 채널 접속</span>
+                <ul>
+                  <li>10분 전까지 멘토링 전용 음성 채널에 참여 후 네트워크 및 마이크 등 수업 환경을 정비합니다.</li>
+                </ul>
+              </li>
+              <li>
+                <span class="li-main">(2) OT 진행</span>
+                <ul>
+                  <li>OT 시작 전 서로 얼굴을 볼 수 있게 캠을 키도록 독려합니다.</li>
+                  <li>자료를 활용하여 반별 OT를 진행합니다.</li>
+                </ul>
+              </li>
+              <li>
+                <span class="li-main">(3) 자기소개</span>
+                <ul>
+                  <li>OT 자료 내 마지막 장표인 ‘자기소개’를 진행합니다.</li>
+                  <li>자유게시판에 작성한 자기소개를 바탕으로 먼저 멘토님을 간단히 소개합니다.</li>
+                  <li>OT에 참여한 모든 수강생들과 간단히 소개를 나눕니다.</li>
+                </ul>
+              </li>
+              <li>
+                <span class="li-main">(4) 자유 Q&A</span>
+                <ul>
+                  <li>자기소개 후 남은시간 동안 자유롭게 질의응답 시간을 가집니다.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>3. OT 종료 후</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">출석부에 자동으로 기록된 1주차 멘토링(OT) 출결을 점검합니다. (출석 = 1, 결석 = 공백)</span></li>
+              <li><span class="li-main">불참자가 있다면 OT 내용을 숙지할 수 있도록 자료를 소통 채널에 공유합니다.</span></li>
+              <li><span class="li-main">수강생이 자기소개를 작성하고 소통 채널에서 취향을 나눌 수 있도록 안내합니다.</span></li>
+              <li><span class="li-main">모든 분들의 소개글을 읽고 소통하는 것이 첫 멘토링의 분위기를 좌우합니다.</span></li>
+              <li><span class="li-main">1주차 정규수업을 시청하며, 본격적인 클래스 수강을 시작하도록 안내합니다.</span></li>
+            </ul>
+            <a href="https://script.google.com/a/macros/feedbluetiger.com/s/AKfycbw-IpTHvhDd9rlLNU07GKerz7r_-pN4veVyI2G_yJB_2Yf2Cm6yx5fRKy13EfLEhuck/exec" target="_blank" class="download-link">
+              🔗 출석부 바로가기
+            </a>
+          </div>
+        </div>
+
+        <!-- 외부 링크 버튼 -->
+        <a href="https://docs.google.com/presentation/d/16f4WJl_s3H2kHrq4r8eWiSip2U8ecG8c9tDO6cCpx1Y/edit?usp=sharing" target="_blank" class="download-link" style="text-decoration:none;">
+          🔗 bluetiger Design OT
+        </a>
+
+        <a href="https://docs.google.com/presentation/d/1FguwEg6ap1Fuo-BxTGBn_QyxlEsDG32xuzUNiaSDB8c/edit?slide=id.p#slide=id.p" target="_blank" class="download-link" style="text-decoration:none;">
+          🔗 bluetiger Marketing·AI OT
+        </a>
+
+        <a href="https://docs.google.com/presentation/d/1lFRvRWcu3pX6zy7jwjc_L0HbPjZM7iZw3HYxvDtm_A8/edit?usp=sharing" target="_blank" class="download-link" style="text-decoration:none; background:rgba(16,185,129,.1); border-color:rgba(16,185,129,.35); color:#0d9e6e;">
+          🔗 playwonder OT
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         SECTION 3 강의 내용 숙지 및 과제 점검
+    ======================================== -->
+    <section id="section-3">
+      <div class="container">
+        <div class="section-label">Step 3</div>
+        <h2>강의 내용 숙지 및 과제 점검</h2>
+        <div class="step-card">
+          <div class="step-body">
+            <h3>사전 강의 내용 숙지</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">LMS 사이트 내 나의 강의실에 접속합니다.</span></li>
+              <li><span class="li-main">‘수강 중인 과정’ 목록에서 담당하는 클래스/기수의 강의실에 입장합니다.</span></li>
+              <li><span class="li-main">다음 멘토링 진행 전 ‘강의목차’에서 정규수업 강의 영상을 숙지하고, 강의자료 및 과제를 확인합니다.</span></li>
+            </ul>
+            <img src="lecture-preview.png" alt="설명" style="width: 100%; margin: 16px 0;">
+            <a href="https://lms.feedbluetiger.com/member/login.jsp" target="_blank" class="download-link" style="text-decoration:none;">
+              🔗 LMS 사이트
+            </a>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>사전 과제 점검</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">교육통합관리시스템 내 통합과제관리에 접속합니다.</span></li>
+              <li><span class="li-main">담당 수강생이 제출한 과제를 확인하고, 우측 ‘평가하기’ 버튼을 눌러 수강생의 과제를 검토합니다.</span></li>
+              <li><span class="li-main">과제를 제출했을 시 100점을 입력하고, 멘토링 수업 전 미리 전달할 내용을 평가의견란에 작성합니다.</span></li>
+              <li><span class="li-main">LMS 평가 기입 후, 출석부에서 해당 주차 과제 제출 여부를 체크합니다.</span></li>
+            </ul>
+
+            <div class="alert alert-warn">
+              <span class="alert-icon">⚠️</span>
+              <ul class="bullet-list" style="color:inherit;">
+                <li><span class="li-main">평가 점수는 담당 수강생의 참여율에 과제 제출 여부가 반영될 수 있도록 반드시 100점을 기입해 주세요.</span></li>
+                <li><span class="li-main">출석부 내 멘토링은 자동으로 체크되나, 과제는 직접 체크해주셔야 합니다.</span></li>
+              </ul>
+            </div>
+            <img src="assignment-review.png" alt="설명" style="width: 100%; margin: 16px 0;">
+            <a href="https://lms.feedbluetiger.com/tutor/" target="_blank" class="download-link" style="text-decoration:none;">
+              🔗 LMS 교육통합관리시스템
+            </a>
+          </div>
+        </div>
+        
+        <h3>교육통합관리시스템의 추가 기능</h3>
+        <div style="color:var(--text2);margin-bottom:28px;display:flex;flex-direction:column;gap:16px;">
+          <div>
+            <div style="font-weight:700;margin-bottom:8px;">1. 수강생별교육현황</div>
+            <ul class="bullet-list">
+              <li>담당하는 클래스/기수의 수강생 이름을 클릭해 수강생의 연락처 등 정보를 확인합니다.</li>
+              <li>‘진도율’은 정규수업 및 과제 제출에 대한 참여율을 의미하며, ‘과제’ 열을 통해 제출 여부 및 종합 점수를 확인합니다.</li>
+              <li>클래스 수료 기준은 진도율 80% 이상 및 전주차 과제 제출입니다.</li>
+            </ul>
+          </div>
+          <div>
+            <div style="font-weight:700;margin-bottom:8px;">2. 과정게시판관리</div>
+            <ul class="bullet-list">
+              <li>‘Q&A’에서 담당 수강생이 강의 내용 또는 과제와 관련되어 LMS 사이트에 올린 질문을 확인하고, 24시간 이내에 답변합니다.</li>
+            </ul>
+          </div>
+        </div>    
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 4 멘토링 진행
+    ======================================== -->
+    <section id="section-4">
+      <div class="container">
+        <div class="section-label">Step 4</div>
+        <h2>멘토링 진행</h2>
+        <div class="step-card">
+          <div class="step-body">
+            <h3>1. 수업 1시간 전</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">멘토링 진행 일시를 디스코드 소통 채널에 전달하여 수강생이 빠짐없이 참여하도록 독려합니다.</span></li>
+              <li><span class="li-main">과제 제출자를 기준으로 멘토링 순서를 지정합니다. (제출순, 랜덤순 등)</span></li>
+              <li><span class="li-main">수강생 일정에 따라 유동적으로 순서를 조율할 수 있습니다.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>2. 수업 진행 중</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">10분 전까지 음성 채널에 참여 후 네트워크 및 마이크 등 수업 환경을 정비합니다.</span></li>
+              <li><span class="li-main">수강생 입장 후 간단한 인사를 나누고, 순서대로 과제 피드백과 사전질문 답변을 진행합니다.</span></li>
+              <li><span class="li-main">피드백은 모두 한 공간에 모여 진행됩니다.</span></li>
+              <li><span class="li-main">수강생은 다른 수강생의 피드백을 들으며 내 과제 디벨롭을 위한 아이디어를 얻습니다.</span></li>
+            </ul>
+            <div class="alert alert-info" style="flex-direction:column; gap:8px;">
+              <div style="display:flex; gap:10px; align-items:center;">
+                <span class="alert-icon">💡</span>
+                참고사항
+              </div>
+              <ul class="bullet-list" style="color:inherit;">
+                <li><span class="li-main">미참여 수강생은 피드백하지 않는 것이 원칙이나, 특이사항이 있는 경우 수강생과 논의하여 실시간 보강으로 피드백을 제공할 수 있습니다.</span></li>
+                <li><span class="li-main">보강은 동일한 음성 채널에서 진행하며, 담당자에게 보강이 진행될 일시 및 명단을 미리 공유합니다.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>3. 수업 종료 후</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">멘토링 수업 종료 후 자동으로 체크된 멘토링 출결을 점검합니다.</span></li>
+              <li><span class="li-main">수업에 참여하지 못한 수강생을 위해 정규수업 수강 및 과제 진행을 독려합니다.</span></li>
+            </ul>
+            <a href="https://script.google.com/a/macros/feedbluetiger.com/s/AKfycbw-IpTHvhDd9rlLNU07GKerz7r_-pN4veVyI2G_yJB_2Yf2Cm6yx5fRKy13EfLEhuck/exec" target="_blank" class="download-link">
+              🔗 출석부 바로가기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         SECTION 5 수강생 독려
+    ======================================== -->
+    <section id="section-5">
+      <div class="container">
+        <div class="section-label">Step 5</div>
+        <h2>수강생 참여 독려</h2>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>소통 채널 활용</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">반별 소통 채널을 통해 멘토링 전날 과제 제출을 리마인드하고, 스터디윗미(온라인 자습실) 사용을 권장합니다.
+                  가벼운 안부나 스몰톡으로 편한 분위기를 만들어두면 마지막 주차까지 참여 분위기를 유지하는 데 도움이 됩니다.</span></li>
+              <li><span class="li-main">수강생이 과제 제출 페이지나 소통 채널에서 질문할 수 있도록 독려하되, 정규수업 권한 등 운영 문의는 LMS내 채널톡 문의로 안내합니다.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>멘토링 준비 시</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">멘토링 전날, 수강생이 제출한 과제와 사전 질문을 미리 검토해 피드백을 준비합니다.
+                  멘토링 시작 시 "미리 살펴봤다"는 언급 한마디는 수강생에게 신뢰와 동기를 줍니다.</span></li>
+              <li><span class="li-main">수업 중 설명한 자료나 참고할 만한 레퍼런스, 현업 노하우가 있다면 함께 공유합니다.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>멘토링 진행 시</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">수업 시작 전 가볍게 스몰톡을 나누며 분위기를 풀면 수강생이 편하게 의견을 낼 수 있는 상태로 본 수업에 들어올 수 있습니다.</span></li>
+              <li><span class="li-main">피드백은 다음 3단계 구조를 기본으로 활용합니다: ① 잘한 점 → ② 개선 포인트 → ③ 제안</span></li>
+              <li><span class="li-main">일방적인 강의보다는, 중간중간 질문과 의견을 주고받는 방식으로 진행합니다.
+                  수강생의 브리핑을 듣고 피드백을 줄 때도 티키타카를 유지하면 수강생이 수동적으로 듣는 것이 아니라 함께 탐색하는 느낌을 받습니다.</span></li>
+              <li><span class="li-main">단순한 감상평보다 근거를 담아 전달하고, 개인적인 선입견이 섞이지 않도록 주의합니다. 같은 상황에는 일관된 기준으로 대응해야 수강생이 안정감을 느낍니다.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>참여율을 높이는 태도</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">참여율은 결국 멘토에 대한 신뢰와 수강생의 학습 의지에서 나옵니다.
+                  '전문가'이기 이전에 '함께 배우는 파트너'의 자세로 접근하고, 피드백 이후 간단한 팔로업 대화로 관심을 표현하면 수강생이 꾸준히 시도할 수 있는 학습 분위기가 만들어집니다.</span></li>
+              <li><span class="li-main">시간 준수, 과제 사전 확인 등의 작은 약속을 지키는 것은 신뢰의 기반입니다.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ========================================
+         checklist — 체크리스트
+         .check-item 블록 복사해서 항목 추가
+    ======================================== -->
+    <section id="checklist">
+      <div class="container">
+        <div class="section-label">Check List</div>
+        <h2>체크리스트</h2>
+        <p style="color:var(--text2);margin-bottom:28px;">매 수업마다 놓치지 말아야 할 핵심 업무를 순서대로 정리했습니다. 수업 전부터 종료 후까지 하나씩 체크하며 진행해 주세요.</p>
+
+        <div class="checklist">
+          <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><svg width="12" height="12" fill="none" stroke="#fff" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+            <div class="check-text">
+              <strong>사전 과제 검토 및 평가 입력</strong>
+              <span>통합과제관리에서 수강생 제출 과제 확인 및 100점 입력 후, 출석부에서 과제 제출 체크</span>
+            </div>
+          </div>
+
+          <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><svg width="12" height="12" fill="none" stroke="#fff" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+            <div class="check-text">
+              <strong>수업 1시간 전 디스코드 소통 채널 공지</strong>
+              <span>소통 전용 텍스트 채널에 진행 일시 전달 및 참여 독려 메시지 발송</span>
+            </div>
+          </div>
+
+          <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><svg width="12" height="12" fill="none" stroke="#fff" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+            <div class="check-text">
+              <strong> 10분 전 음성 채널 접속</strong>
+              <span>멘토링 전용 음성 채널 접속 후 네트워크 및 마이크 환경 점검</span>
+            </div>
+          </div>
+
+          <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><svg width="12" height="12" fill="none" stroke="#fff" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+            <div class="check-text">
+              <strong>멘토링 녹화 시작</strong>
+              <span>OBS 및 구글 드라이브 앱 실행 후 F9 (Mac: fn+F9) 눌러 녹화 시작</span>
+            </div>
+          </div>
+
+          <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><svg width="12" height="12" fill="none" stroke="#fff" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+            <div class="check-text">
+              <strong>수업 종료 후 출결 점검</strong>
+              <span>출석부에서 멘토링 및 과제 출결 상황 확인</span>
+            </div>
+          </div>
+
+          <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><svg width="12" height="12" fill="none" stroke="#fff" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+            <div class="check-text">
+              <strong>미제출·미참여 수강생 팔로업</strong>
+              <span>불참자에게 관련 자료 공유 또는 과제 진행 리마인드 메시지 발송</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress-bar-wrap">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="progress-label" id="progress-label">0 / 6 완료</div>
+        <div class="complete-msg" id="complete-msg" style="display:none; margin-top:20px; padding:18px 22px; background:rgba(16,185,129,.08); border:1px solid rgba(16,185,129,.3); border-radius:12px; text-align:center;">
+          <div style="font-size:24px; margin-bottom:6px;">🎉</div>
+          <div style="font-weight:700; font-size:15px; color:#0d9e6e;">이번 수업도 고생하셨습니다!</div>
+          <div style="font-size:13px; color:var(--text3); margin-top:4px;">모든 항목을 완료했습니다. 수강생들과의 시간, 잘 보내고 계세요 👍</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         FAQ
+         .faq-item 블록 복사해서 항목 추가
+    ======================================== -->
+    <section id="faq" style="border-bottom:none;">
+      <div class="container">
+        <div class="section-label">FAQ</div>
+        <h2>자주 묻는 질문</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              출석부 내 멘토링 출결이 업데이트되지 않습니다.
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              여러 클래스의 멘토링이 동시에 진행될 경우, 출결 반영에 시간이 소요될 수 있습니다.<br>
+              잠시 기다려주신 후 출석부를 다시 확인해주시면 감사하겠습니다.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              수강생의 과제를 어디서 확인하나요?
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              LMS 교육통합관리시스템 내 통합과제관리에서 주차별 제출된 과제를 확인합니다.
+              <ul>
+                <li>‘평가하기’ 버튼을 눌러 수강생의 과제를 검토합니다.</li>
+                <li>과제를 제출했을 시 100점을 입력하고, 수업 전 미리 전달할 내용이 있을 시 평가의견란에 작성합니다.</li>
+              </ul>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              수강생 대상의 학습 독려 메시지가 수신됩니다.
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              수강생과 같은 화면으로 강의 영상 및 자료와 과제를 확인하실 수 있도록 지급드려, 학습 독려 메시지를 받으실 수 있습니다.
+              <ul>
+                <li>학습 독려 메시지는 [02-332-1277] 번호로 발송됩니다.</li>
+                <li>멘토님 공지사항은 카카오 알림톡 및 [070-7771-8297] 번호로 전달드립니다.</li>
+              </ul>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              LMS/디스코드에서 오류가 발생했습니다.
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              디스코드 하단 "멘토님-문의사항"에 말씀해주시면 최대한 빠르게 확인 후 안내 도와드리겠습니다. 협조해 주셔서 감사합니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+<div style="width:100%;height:1px;background:rgba(0, 0, 0, 0.15);"></div>
+
+
+<!-- ============================================
+     FOOTER
+============================================ -->
+<div style="background-color: #f8f8f8;">
+  <footer style="padding: 26px 24px;">
+    <p><strong>주식회사 블루타이거</strong> · 멘토 가이드</p>
+    <p style="margin-top:8px;">문의: 010-9917-2415</p>
+  </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
