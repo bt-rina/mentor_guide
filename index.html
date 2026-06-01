@@ -88,7 +88,6 @@
                 <li>연사님의 커리큘럼 녹화 강의입니다.</li>
                 <li>과제 수행에 필요한 이론 설명, 예제 실습 등의 내용으로 이루어집니다.</li>
                 <li>강의를 기반으로 해당 주차의 과제가 제시됩니다.</li>
-                <li>수강생은 매주 1-2회 정해진 일시에 정규수업 강의를 시청합니다.</li>
                 <li>해당 주차의 출석이 반영되면, 이후에는 강의를 계속 복습할 수 있습니다.</li>
               </ul>
             </div>
@@ -115,7 +114,7 @@
                 <li>멘토님과 담당 수강생 간 소통을 위한 대화방(텍스트 채널)입니다.</li>
                 <li>담당 수강생에게 수업 관련 공지사항과 과제 진행 등의 참여 독려 메시지를 전달합니다.</li>
                 <li>수강생은 소통 채널을 통해 과제에 대해 궁금한 점을 멘토님께 질문합니다.</li>
-                <li>소통 채널 및 멘토링 채널은 <strong>개강 3일 전</strong>까지 초대드립니다.</li>
+                <li>소통 채널 및 멘토링 채널은 개강 3일 전까지 초대드립니다.</li>
               </ul>
             </div>
           </div>
@@ -271,9 +270,9 @@
             <h3>STEP 6 · OBS 자동 실행·녹화 설정</h3>
             <p style="font-size:14px;color:var(--text2);margin-bottom:16px;">멘토링 시간에 맞춰 OBS가 자동으로 켜지고 녹화를 시작하도록 설정합니다. 요일마다 강의 시간이 다른 경우 각자 해당 요일로 설정하세요.</p>
 
-            <div class="os-label" style="margin-top:0;">🖥 Windows — 작업 스케줄러</div>
+            <div class="os-label" style="margin-top:0;">🖥 Windows: 작업 스케줄러</div>
 
-            <div style="font-weight:700;font-size:12px;color:var(--text3);margin-bottom:6px;">6-1. OBS 설치 경로 확인</div>
+            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin-bottom:8px;">6-1. OBS 설치 경로 확인</div>
             <ul class="bullet-list" style="margin-bottom:10px;">
               <li><span class="li-main">바탕화면 또는 시작 메뉴에서 OBS 아이콘을 우클릭 &gt; '파일 위치 열기' 클릭</span></li>
               <li><span class="li-main">열린 폴더에서 <code>obs64.exe</code>를 우클릭 &gt; '속성' &gt; '일반' 탭에서 '위치' 경로를 메모합니다</span>
@@ -282,44 +281,44 @@
                 </ul>
               </li>
             </ul>
-            <img src="window_step_6-1-1.png" alt="OBS 아이콘 우클릭" class="step-img">
-            <div class="step-img-caption">OBS 아이콘 우클릭 → 파일 위치 열기</div>
-            <img src="window_step_6-1-2.png" alt="속성에서 위치 확인" class="step-img">
-            <div class="step-img-caption">속성 → 일반 탭에서 '위치' 경로 메모</div>
+            <div class="img-row">
+              <img src="window_step_6-1-1.png" alt="OBS 아이콘 우클릭" class="step-img">
+              <img src="window_step_6-1-2.png" alt="속성에서 위치 확인" class="step-img">
+            </div>
             <div class="alert alert-warn" style="margin-bottom:16px;">
               <span class="alert-icon">⚠️</span>
               <span>열린 경로가 <code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs</code> 처럼 보이면, <code>obs64.exe</code>를 한 번 더 우클릭 &gt; "파일 위치 열기"를 한 번 더 실행하세요.</span>
             </div>
 
-            <div style="font-weight:700;font-size:12px;color:var(--text3);margin-bottom:6px;">6-2. 작업 스케줄러 열기</div>
+            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin-bottom:8px;">6-2. 작업 스케줄러 열기</div>
             <ul class="bullet-list" style="margin-bottom:10px;">
               <li><span class="li-main"><strong>Windows 키 + S</strong>를 눌러 검색창에 '작업 스케줄러'를 입력하고 클릭합니다</span></li>
             </ul>
             <img src="window_step_6-2-1.png" alt="작업 스케줄러 검색" class="step-img">
-            <div class="step-img-caption">작업 스케줄러 검색 후 클릭</div>
 
-            <div style="font-weight:700;font-size:12px;color:var(--text3);margin:16px 0 6px;">6-3. 새 작업 만들기</div>
+            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin:16px 0 8px;">6-3. 새 작업 만들기</div>
             <ul class="bullet-list" style="margin-bottom:10px;">
               <li><span class="li-main">오른쪽 패널에서 <strong>"기본 작업 만들기..."</strong>를 클릭합니다</span></li>
-            </ul>
-            <img src="window_step_6-3-1.png" alt="기본 작업 만들기" class="step-img">
-            <ul class="bullet-list" style="margin:10px 0;">
               <li><span class="li-main">이름 입력: 예) <strong>OBS 자동 실행</strong> → '다음' 클릭</span></li>
             </ul>
-            <img src="window_step_6-3-2.png" alt="이름 입력" class="step-img">
+            <div class="img-row">
+              <img src="window_step_6-3-1.png" alt="기본 작업 만들기" class="step-img">
+              <img src="window_step_6-3-2.png" alt="이름 입력" class="step-img">
+            </div>
             <ul class="bullet-list" style="margin:10px 0;">
               <li><span class="li-main">트리거 선택: <strong>'매주'</strong>를 선택하고 '다음' 클릭</span></li>
               <li><span class="li-main">아래 항목을 설정합니다</span>
                 <ul>
                   <li>시작 날짜: 오늘 날짜로 설정</li>
-                  <li>실행 시간: 녹화 시작 시간 (예: 오후 8:50 → 20:50)</li>
+                  <li>실행 시간: 멘토링 수업 10분 전 (예: 멘토링 오후 9시 → 실행 시간 20:50)</li>
                   <li>요일 선택: 본인 강의 요일 체크 (예: 월요일)</li>
                 </ul>
               </li>
             </ul>
-            <img src="window_step_6-3-3.png" alt="매주 트리거 선택" class="step-img">
-            <img src="window_step_6-3-4.png" alt="날짜·시간·요일 설정" class="step-img">
-            <div class="step-img-caption">날짜, 시간, 요일 설정 후 다음 클릭</div>
+            <div class="img-row">
+              <img src="window_step_6-3-3.png" alt="매주 트리거 선택" class="step-img">
+              <img src="window_step_6-3-4.png" alt="날짜·시간·요일 설정" class="step-img">
+            </div>
             <ul class="bullet-list" style="margin:10px 0;">
               <li><span class="li-main">동작 선택: <strong>'프로그램 시작'</strong>을 선택하고 '다음' 클릭</span></li>
             </ul>
@@ -334,49 +333,48 @@
             </ul>
             <div class="code-block">C:\Program Files\obs-studio\bin\64bit</div>
             <ul class="bullet-list" style="margin:10px 0;">
-              <li><span class="li-main">'마침'을 클릭하면 완료됩니다</span></li>
+              <li><span class="li-main">'마침'을 클릭하면 완료됩니다.</span></li>
             </ul>
             <img src="window_step_6-3-6.png" alt="경로·인수 입력 후 마침" class="step-img">
-            <div class="step-img-caption">exe 경로, 인수, 시작 위치 입력 후 마침</div>
             <div class="alert alert-warn" style="margin-bottom:4px;">
               <span class="alert-icon">⚠️</span>
               <span>PC가 잠금 상태이거나 절전 모드이면 자동 실행이 되지 않을 수 있습니다. 멘토링 전날 PC 전원이 켜진 상태로 유지해 주세요.</span>
             </div>
 
-            <div class="os-label" style="margin-top:28px;">🍎 macOS — crontab</div>
+            <div class="os-label" style="margin-top:28px;">🍎 macOS: crontab</div>
 
-            <div style="font-weight:700;font-size:12px;color:var(--text3);margin-bottom:6px;">6-1. 터미널 열기</div>
+            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin-bottom:8px;">6-1. 터미널 열기</div>
             <ul class="bullet-list" style="margin-bottom:12px;">
               <li><span class="li-main"><strong>Command(⌘) + Space</strong>로 Spotlight를 열고, '터미널' 입력 후 Enter를 누릅니다</span></li>
             </ul>
 
-            <div style="font-weight:700;font-size:12px;color:var(--text3);margin-bottom:6px;">6-2. crontab 설정</div>
+            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin-bottom:8px;">6-2. crontab 설정</div>
             <ul class="bullet-list" style="margin-bottom:8px;">
               <li><span class="li-main">터미널에 아래 명령어를 입력하고 Enter를 누릅니다:</span></li>
             </ul>
             <div class="code-block">crontab -e</div>
-            <img src="mac_step_6-2-1.png" alt="crontab -e 입력" class="step-img">
+            <img src="mac_step_6-2-1.png" alt="crontab -e 입력" class="step-img" style="margin-bottom:0;">
             <ul class="bullet-list" style="margin:10px 0;">
-              <li><span class="li-main"><strong>i</strong>를 눌러 입력 모드로 전환 후, 아래 형식으로 입력합니다:</span></li>
+              <li><span class="li-main"><strong>i</strong>를 눌러 입력 모드(INSERT)로 전환 후, 아래 형식으로 입력합니다:</span></li>
             </ul>
             <div class="code-block">50 20 * * 1 open -a OBS --args --startrecording</div>
-            <img src="mac_step_6-2-2.png" alt="crontab 입력" class="step-img">
-            <div class="step-img-caption">입력값 의미: 50=분, 20=시간(오후 8시), 1=요일 (월1, 화2, 수3, 목4, 금5)</div>
+            <p style="font-size:12px;color:var(--text3);margin:4px 0 10px;">입력값 의미: 50=분, 20=시간(오후 8시), 1=요일 (월1, 화2, 수3, 목4, 금5)</p>
             <ul class="bullet-list" style="margin:10px 0;">
-              <li><span class="li-main"><strong>Esc</strong>를 누르고 <code>:wq</code>를 입력한 후 Enter를 누릅니다 (저장 후 종료)</span></li>
+              <li><span class="li-main"><strong>Esc</strong>를 누르고 <code>:wq</code>를 입력한 후 Enter를 누릅니다(저장 후 종료).</span></li>
             </ul>
-            <img src="mac_step_6-2-3.png" alt=":wq 저장" class="step-img">
-            <div class="step-img-caption">:wq = 저장 후 나가기 / 저장 없이 나가려면 :q!</div>
+            <div class="img-row">
+              <img src="mac_step_6-2-2.png" alt="crontab 입력" class="step-img">
+              <img src="mac_step_6-2-3.png" alt=":wq 저장" class="step-img">
+            </div>
 
-            <div style="font-weight:700;font-size:12px;color:var(--text3);margin:16px 0 6px;">6-3. 권한 허용</div>
+            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin:16px 0 8px;">6-3. 권한 허용</div>
             <ul class="bullet-list" style="margin-bottom:10px;">
-              <li><span class="li-main">시스템 설정 &gt; 개인정보 보호 및 보안 &gt; '자동화' 항목에서 터미널이 OBS를 제어하도록 허용합니다</span></li>
+              <li><span class="li-main">시스템 설정 &gt; 개인정보 보호 및 보안 &gt; '자동화' 항목에서 터미널이 OBS를 제어하도록 허용합니다.</span></li>
             </ul>
             <img src="mac_step_6-3.png" alt="자동화 권한 허용" class="step-img">
-            <div class="step-img-caption">터미널 → OBS 제어 허용 체크</div>
             <div class="alert alert-warn">
               <span class="alert-icon">⚠️</span>
-              <span>맥이 잠금 상태나 절전 모드이면 crontab이 실행되지 않을 수 있습니다. 시스템 설정 &gt; 배터리에서 '자동으로 잠자기' 시간을 멘토링 시간 이후로 조정해 주세요.</span>
+              <span>맥이 잠금 상태나 절전 모드이면 crontab이 실행되지 않을 수 있습니다.<br>시스템 설정 &gt; 배터리에서 '자동으로 잠자기' 시간을 멘토링 시간 이후로 조정해 주세요.</span>
             </div>
           </div>
         </div>
@@ -399,15 +397,15 @@
               <li><span class="li-main">터미널에서 <code>crontab -e</code> 입력 후 <strong>i</strong>로 입력 모드 전환</span></li>
               <li><span class="li-main">OBS 관련 줄 처리</span>
                 <ul>
-                  <li>일시 중지: 줄 맨 앞에 <code>#</code> 추가 — 예) <code># 50 20 * * 1 open -a OBS --args --startrecording</code></li>
-                  <li>완전 삭제: 해당 줄 전체 삭제</li>
+                  <li>1. 일시 중지: 줄 맨 앞에 "#" 추가<br>(예) <code># 50 20 * * 1 open -a OBS --args --startrecording</code></li>
+                  <li>2. 완전 삭제: 해당 줄 전체 삭제</li>
                 </ul>
               </li>
               <li><span class="li-main"><strong>Esc</strong> 후 <code>:wq</code>를 입력하고 Enter로 저장</span></li>
             </ul>
             <div class="alert alert-info">
               <span class="alert-icon">💡</span>
-              <span># 을 붙이면 설정은 그대로 남은 채 비활성화됩니다. 다시 쓰고 싶을 때 # 만 지우면 됩니다.</span>
+              <span># 을 붙이면 설정은 그대로 남은 채 비활성화됩니다. 다시 활성화하고 싶을 때 # 만 지우면 됩니다.</span>
             </div>
           </div>
         </div>
@@ -420,14 +418,8 @@
               <span>STEP 6 자동 실행 설정을 완료하셨다면, <strong>멘토링 시작 시간에 OBS가 자동으로 켜지고 녹화가 자동으로 시작됩니다.</strong> OBS 하단의 녹화 카운터를 확인해 주세요.</span>
             </div>
             <ul class="bullet-list">
-              <li><span class="li-main">디스코드 음성 채널에 입장합니다</span></li>
-              <li><span class="li-main">OBS 하단에 "녹화 중" + 시간 카운터가 표시되면 정상 녹화 중</span>
-                <ul>
-                  <li>수동으로 녹화를 시작하려면 <strong>F9</strong> (Mac: <strong>fn + F9</strong>)를 누릅니다</li>
-                </ul>
-              </li>
-              <li><span class="li-main">멘토링 종료 후 <strong>F9</strong> (Mac: <strong>fn + F9</strong>)를 눌러 녹화를 종료합니다</span></li>
-              <li><span class="li-main">녹화본은 공유 드라이브의 멘토님 전용 폴더에 자동으로 업로드됩니다</span></li>
+              <li><span class="li-main">멘토링 종료 후 '녹화 중단' 버튼 또는 F9 키(Mac: fn + F9)를 눌러 녹화를 종료합니다.</span></li>
+              <li><span class="li-main">녹화본은 공유 드라이브의 멘토님 전용 폴더에 자동으로 업로드됩니다.</span></li>
             </ul>
             <div class="alert alert-warn" style="margin-top:16px;">
               <span class="alert-icon">⚠️</span>
@@ -441,10 +433,10 @@
             <h3>녹화본 파일 관리</h3>
             <ul class="bullet-list">
               <li><span class="li-main">파일명은 녹화 시작 시점 기준으로 설정됩니다. 여러 클래스를 담당하시는 경우 녹화 날짜로 클래스를 구분할 수 있습니다.</span></li>
-              <li><span class="li-main">파일명을 직접 수정하시거나, 멘토님 폴더 아래 클래스별 하위 폴더를 만들어 정리하셔도 됩니다.</span></li>
-              <li><span class="li-main">웹 접속 시 드라이브 링크에 영상이 보이지 않는 경우, 드라이브 앱에서 동기화 상태를 확인해 주세요. 앱에서 동기화가 완료되면 링크에서도 확인할 수 있습니다.</span></li>
+              <li><span class="li-main">파일명을 수정하시거나, 클래스별 하위 폴더를 만들어 정리하셔도 됩니다.</span></li>
+              <li><span class="li-main">드라이브 웹 링크에 영상이 보이지 않는 경우, 드라이브 앱에서 동기화 상태를 확인해 주세요. 앱에서 동기화가 완료되면 웹에서도 확인할 수 있습니다.</span></li>
               <li><span class="li-main">드라이브 업로드 후 영상 처리에 시간이 소요될 수 있습니다.</span></li>
-              <li><span class="li-main">영상 링크 공유가 필요하실 경우, 드라이브 전체 링크가 아닌 <strong>멘토님 전용 폴더의 링크</strong>를 공유해 주세요.</span></li>
+              <li><span class="li-main">영상 링크 공유가 필요하실 경우, 드라이브 전체 링크가 아닌 <strong>멘토님 전용 폴더</strong>링크를 공유해 주세요.</span></li>
             </ul>
             <div class="alert alert-danger" style="margin-top:20px;">
               <span class="alert-icon">🎥</span>
