@@ -64,20 +64,20 @@
           <div>
             <div style="font-weight:700;margin-bottom:8px;">1. 멘토링 수업</div>
             <ul class="bullet-list">
-              <li>사전에 제출된 과제 검토 및 피드백 준비를 합니다.</li>
-              <li>zoom을 통한 주1회 온라인 멘토링 수업을 진행합니다.</li>
+              <li><span class="li-main">사전에 제출된 과제 검토 및 피드백 준비를 합니다.</span></li>
+              <li><span class="li-main">zoom을 통한 주1회 온라인 멘토링 수업을 진행합니다.</span></li>
             </ul>
           </div>
           <div>
             <div style="font-weight:700;margin-bottom:8px;">2. 수강생 학습 독려</div>
             <ul class="bullet-list">
-              <li>출석 및 과제 제출을 독려합니다.</li>
-              <li>과제 수행 중 궁금한 점에 대해 실무 노하우를 살려 답변합니다.</li>
+              <li><span class="li-main">출석 및 과제 제출을 독려합니다.</span></li>
+              <li><span class="li-main">과제 수행 중 궁금한 점에 대해 실무 노하우를 살려 답변합니다.</span></li>
             </ul>
           </div>
         </div>
 
-        <h3>클래스 용어</h3>
+        <h3 class="section-subheading">클래스 용어</h3>
         <div class="quality-grid">
 
           <div class="quality-card">
@@ -164,12 +164,12 @@
         <div class="step-card">
           <div class="step-body">
             <h3>STEP 1 · OBS Studio 설치</h3>
-            <div style="font-weight:700;margin-bottom:8px;font-size:13px;color:var(--text3);">Windows</div>
+            <div class="os-label" style="margin-top:0;">🖥 Windows</div>
             <ul class="bullet-list">
               <li><span class="li-main"><a href="https://obsproject.com/download" target="_blank">obsproject.com/download</a> 접속 후 Windows 버전 다운로드 및 설치</span></li>
               <li><span class="li-main">설치 중 "최적화 마법사"가 나오면 취소 (전용 커스텀 프로필을 설정할 예정입니다.)</span></li>
             </ul>
-            <div style="font-weight:700;margin:16px 0 8px;font-size:13px;color:var(--text3);">Mac</div>
+            <div class="os-label">🍎 Mac</div>
             <ul class="bullet-list">
               <li><span class="li-main"><a href="https://obsproject.com/download" target="_blank">obsproject.com/download</a> 접속 후 macOS 버전 다운로드, Applications 폴더에 드래그</span></li>
               <li><span class="li-main">첫 실행 시 아래 4가지 권한 필수 허용 (시스템 설정 &gt; 개인정보 보호 및 보안)</span>
@@ -236,8 +236,10 @@
             </ul>
             <div class="alert alert-warn">
               <span class="alert-icon">⚠️</span>
-              <span>해당하시는 폴더가 없을 경우, 공유 드라이브 안에서 우클릭 &gt; 새 폴더로 직접 만들어주세요. 
-                <br>녹화본의 정상 저장을 위해, 해당 폴더는 <strong>링크가 있는 모든 사용자의 편집자(관리자) 권한</strong>으로 설정해 주세요.</span>
+              <ul class="bullet-list" style="color:inherit;">
+                <li><span class="li-main">해당하시는 폴더가 없을 경우, 공유 드라이브 안에서 우클릭 &gt; 새 폴더로 직접 만들어주세요.</span></li>
+                <li><span class="li-main">녹화본의 정상 저장을 위해, 해당 폴더는 '링크가 있는 모든 사용자'의 '편집자(관리자)' 권한으로 설정해 주세요.</span></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -246,7 +248,7 @@
           <div class="step-body">
             <h3>STEP 5 · 화면 캡처 소스 추가</h3>
             <ul class="bullet-list">
-              <li><span class="li-main">OBS 하단 "소스 목록(Sources)" 패널 하단의 "+" 클릭 &gt; "화면 캡처(Display Capture)" 선택</span></li>
+              <li><span class="li-main">OBS 하단 "소스 목록(Sources)" 패널 하단의 "+" 클릭 &gt; 화면 캡처(Display Capture) 선택</span></li>
               <li><span class="li-main">디스플레이 캡처 &gt; 디스코드가 표시될 디스플레이 선택</span></li>
               <li><span class="li-main">OBS 하단 오디오 믹서에서 동작 확인</span>
                 <ul>
@@ -265,17 +267,17 @@
           </div>
         </div>
 
+        <p style="font-size:14px;color:var(--text2);margin:0 0 16px;">멘토링 시간에 맞춰 OBS가 자동으로 켜지고 녹화를 시작하도록 설정합니다. 요일마다 강의 시간이 다른 경우 각자 해당 요일로 설정하세요.</p>
+
         <div class="step-card">
           <div class="step-body">
-            <h3>STEP 6 · OBS 자동 실행·녹화 설정</h3>
-            <p style="font-size:14px;color:var(--text2);margin-bottom:16px;">멘토링 시간에 맞춰 OBS가 자동으로 켜지고 녹화를 시작하도록 설정합니다. 요일마다 강의 시간이 다른 경우 각자 해당 요일로 설정하세요.</p>
-
-            <div class="os-label" style="margin-top:0;">🖥 Windows: 작업 스케줄러</div>
+            <h3>STEP 6 · 자동 실행·녹화 설정 — Windows</h3>
+            <div class="os-label" style="margin-top:0;">🖥 작업 스케줄러</div>
 
             <div style="font-weight:700;font-size:14px;color:var(--accent2);margin-bottom:8px;">6-1. OBS 설치 경로 확인</div>
-            <ul class="bullet-list" style="margin-bottom:10px;">
+            <ul class="bullet-list" style="margin-bottom:12px;">
               <li><span class="li-main">바탕화면 또는 시작 메뉴에서 OBS 아이콘을 우클릭 &gt; '파일 위치 열기' 클릭</span></li>
-              <li><span class="li-main">열린 폴더에서 <code>obs64.exe</code>를 우클릭 &gt; '속성' &gt; '일반' 탭에서 '위치' 경로를 메모합니다</span>
+              <li><span class="li-main">열린 폴더에서 <code>obs64.exe</code> 우클릭 &gt; '속성' &gt; '일반' 탭에서 '위치' 경로를 메모합니다.</span>
                 <ul>
                   <li>일반적인 기본 경로: <code>C:\Program Files\obs-studio\bin\64bit\obs64.exe</code></li>
                 </ul>
@@ -285,29 +287,29 @@
               <img src="window_step_6-1-1.png" alt="OBS 아이콘 우클릭" class="step-img">
               <img src="window_step_6-1-2.png" alt="속성에서 위치 확인" class="step-img">
             </div>
-            <div class="alert alert-warn" style="margin-bottom:16px;">
+            <div class="alert alert-warn" style="margin:12px 0;">
               <span class="alert-icon">⚠️</span>
-              <span>열린 경로가 <code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs</code> 처럼 보이면, <code>obs64.exe</code>를 한 번 더 우클릭 &gt; "파일 위치 열기"를 한 번 더 실행하세요.</span>
+              <span>경로가 <code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs</code> 처럼 보이면, <code>obs64.exe</code>를 한 번 더 우클릭 &gt; "파일 위치 열기"를 한 번 더 실행하세요.</span>
             </div>
 
-            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin-bottom:8px;">6-2. 작업 스케줄러 열기</div>
-            <ul class="bullet-list" style="margin-bottom:10px;">
-              <li><span class="li-main"><strong>Windows 키 + S</strong>를 눌러 검색창에 '작업 스케줄러'를 입력하고 클릭합니다</span></li>
+            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin:16px 0 8px;">6-2. 작업 스케줄러 열기</div>
+            <ul class="bullet-list" style="margin-bottom:12px;">
+              <li><span class="li-main"><strong>Windows 키 + S</strong>를 눌러 검색창에 '작업 스케줄러'를 입력하고 클릭합니다.</span></li>
             </ul>
             <img src="window_step_6-2-1.png" alt="작업 스케줄러 검색" class="step-img">
 
             <div style="font-weight:700;font-size:14px;color:var(--accent2);margin:16px 0 8px;">6-3. 새 작업 만들기</div>
-            <ul class="bullet-list" style="margin-bottom:10px;">
-              <li><span class="li-main">오른쪽 패널에서 <strong>"기본 작업 만들기..."</strong>를 클릭합니다</span></li>
-              <li><span class="li-main">이름 입력: 예) <strong>OBS 자동 실행</strong> → '다음' 클릭</span></li>
+            <ul class="bullet-list" style="margin-bottom:12px;">
+              <li><span class="li-main">오른쪽 패널에서 <strong>"기본 작업 만들기..."</strong>를 클릭합니다.</span></li>
+              <li><span class="li-main">이름 입력 예시: "OBS 자동 실행" → '다음' 클릭</span></li>
             </ul>
             <div class="img-row">
               <img src="window_step_6-3-1.png" alt="기본 작업 만들기" class="step-img">
               <img src="window_step_6-3-2.png" alt="이름 입력" class="step-img">
             </div>
-            <ul class="bullet-list" style="margin:10px 0;">
-              <li><span class="li-main">트리거 선택: <strong>'매주'</strong>를 선택하고 '다음' 클릭</span></li>
-              <li><span class="li-main">아래 항목을 설정합니다</span>
+            <ul class="bullet-list" style="margin:12px 0;">
+              <li><span class="li-main">트리거 선택: <strong>'매주'</strong> 선택하고 '다음' 클릭</span></li>
+              <li><span class="li-main">아래 항목을 설정합니다:</span>
                 <ul>
                   <li>시작 날짜: 오늘 날짜로 설정</li>
                   <li>실행 시간: 멘토링 수업 10분 전 (예: 멘토링 오후 9시 → 실행 시간 20:50)</li>
@@ -319,47 +321,55 @@
               <img src="window_step_6-3-3.png" alt="매주 트리거 선택" class="step-img">
               <img src="window_step_6-3-4.png" alt="날짜·시간·요일 설정" class="step-img">
             </div>
-            <ul class="bullet-list" style="margin:10px 0;">
+            <ul class="bullet-list" style="margin:12px 0;">
               <li><span class="li-main">동작 선택: <strong>'프로그램 시작'</strong>을 선택하고 '다음' 클릭</span></li>
             </ul>
             <img src="window_step_6-3-5.png" alt="동작 선택" class="step-img">
-            <ul class="bullet-list" style="margin:10px 0;">
-              <li><span class="li-main">"찾아보기"를 클릭하여 6-1에서 메모한 <code>obs64.exe</code> 경로를 선택합니다</span></li>
-              <li><span class="li-main">'인수 추가(선택)' 칸에 아래를 입력합니다 (자동 녹화 시작 + 트레이 최소화):</span></li>
+            <ul class="bullet-list" style="margin:12px 0;">
+              <li><span class="li-main">"찾아보기"를 클릭하여 6-1 단계에서 메모한 <code>obs64.exe</code> 경로를 선택합니다.</span></li>
+              <li><span class="li-main">'인수 추가(선택)' 칸에 아래를 입력합니다(자동 녹화 시작 + 트레이 최소화):</span></li>
             </ul>
-            <div class="code-block">--startrecording --minimize-to-tray</div>
-            <ul class="bullet-list" style="margin:10px 0;">
+            <div class="code-block">--disable-shutdown-check</div>
+            <ul class="bullet-list" style="margin:12px 0;">
               <li><span class="li-main">'시작 위치(옵션)' 칸에 아래를 입력합니다:</span></li>
             </ul>
             <div class="code-block">C:\Program Files\obs-studio\bin\64bit</div>
-            <ul class="bullet-list" style="margin:10px 0;">
+            <ul class="bullet-list" style="margin:12px 0;">
               <li><span class="li-main">'마침'을 클릭하면 완료됩니다.</span></li>
             </ul>
             <img src="window_step_6-3-6.png" alt="경로·인수 입력 후 마침" class="step-img">
-            <div class="alert alert-warn" style="margin-bottom:4px;">
+            <div class="alert alert-warn" style="margin-top:12px;">
               <span class="alert-icon">⚠️</span>
-              <span>PC가 잠금 상태이거나 절전 모드이면 자동 실행이 되지 않을 수 있습니다. 멘토링 전날 PC 전원이 켜진 상태로 유지해 주세요.</span>
+              <span>PC가 잠금 상태이거나 절전 모드이면 자동 실행이 되지 않을 수 있습니다.<br>멘토링 전날 PC 전원이 켜진 상태로 유지해 주세요.</span>
             </div>
+          </div>
+        </div>
 
-            <div class="os-label" style="margin-top:28px;">🍎 macOS: crontab</div>
+        <div class="step-card">
+          <div class="step-body">
+            <h3>STEP 6 · 자동 실행·녹화 설정 — macOS</h3>
+            <div class="os-label" style="margin-top:0;">🍎 crontab</div>
 
             <div style="font-weight:700;font-size:14px;color:var(--accent2);margin-bottom:8px;">6-1. 터미널 열기</div>
             <ul class="bullet-list" style="margin-bottom:12px;">
-              <li><span class="li-main"><strong>Command(⌘) + Space</strong>로 Spotlight를 열고, '터미널' 입력 후 Enter를 누릅니다</span></li>
+              <li><span class="li-main">Command(⌘) + Space로 Spotlight를 열고, '터미널' 입력 후 Enter를 누릅니다.</span></li>
             </ul>
 
-            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin-bottom:8px;">6-2. crontab 설정</div>
-            <ul class="bullet-list" style="margin-bottom:8px;">
+            <div style="font-weight:700;font-size:14px;color:var(--accent2);margin:16px 0 8px;">6-2. crontab 설정</div>
+            <ul class="bullet-list" style="margin-bottom:12px;">
               <li><span class="li-main">터미널에 아래 명령어를 입력하고 Enter를 누릅니다:</span></li>
             </ul>
             <div class="code-block">crontab -e</div>
-            <img src="mac_step_6-2-1.png" alt="crontab -e 입력" class="step-img" style="margin-bottom:0;">
-            <ul class="bullet-list" style="margin:10px 0;">
-              <li><span class="li-main"><strong>i</strong>를 눌러 입력 모드(INSERT)로 전환 후, 아래 형식으로 입력합니다:</span></li>
+            <img src="mac_step_6-2-1.png" alt="crontab -e 입력" class="step-img">
+            <ul class="bullet-list" style="margin:12px 0;">
+              <li><span class="li-main"><strong>i</strong>를 눌러 입력 모드(INSERT)로 전환 후, 아래 형식으로 입력합니다:</span>
+                <ul>
+                  <li>50=분, 20=시간(오후 8시), 1=요일(월1, 화2, 토6, 일7)</li>
+                </ul>
+              </li>
             </ul>
             <div class="code-block">50 20 * * 1 open -a OBS --args --startrecording</div>
-            <p style="font-size:12px;color:var(--text3);margin:4px 0 10px;">입력값 의미: 50=분, 20=시간(오후 8시), 1=요일 (월1, 화2, 수3, 목4, 금5)</p>
-            <ul class="bullet-list" style="margin:10px 0;">
+            <ul class="bullet-list" style="margin:12px 0;">
               <li><span class="li-main"><strong>Esc</strong>를 누르고 <code>:wq</code>를 입력한 후 Enter를 누릅니다(저장 후 종료).</span></li>
             </ul>
             <div class="img-row">
@@ -368,11 +378,11 @@
             </div>
 
             <div style="font-weight:700;font-size:14px;color:var(--accent2);margin:16px 0 8px;">6-3. 권한 허용</div>
-            <ul class="bullet-list" style="margin-bottom:10px;">
+            <ul class="bullet-list" style="margin-bottom:12px;">
               <li><span class="li-main">시스템 설정 &gt; 개인정보 보호 및 보안 &gt; '자동화' 항목에서 터미널이 OBS를 제어하도록 허용합니다.</span></li>
             </ul>
             <img src="mac_step_6-3.png" alt="자동화 권한 허용" class="step-img">
-            <div class="alert alert-warn">
+            <div class="alert alert-warn" style="margin-top:12px;">
               <span class="alert-icon">⚠️</span>
               <span>맥이 잠금 상태나 절전 모드이면 crontab이 실행되지 않을 수 있습니다.<br>시스템 설정 &gt; 배터리에서 '자동으로 잠자기' 시간을 멘토링 시간 이후로 조정해 주세요.</span>
             </div>
@@ -397,7 +407,7 @@
               <li><span class="li-main">터미널에서 <code>crontab -e</code> 입력 후 <strong>i</strong>로 입력 모드 전환</span></li>
               <li><span class="li-main">OBS 관련 줄 처리</span>
                 <ul>
-                  <li>1. 일시 중지: 줄 맨 앞에 "#" 추가<br>(예) <code># 50 20 * * 1 open -a OBS --args --startrecording</code></li>
+                  <li>1. 일시 중지: 줄 맨 앞에 "#" 추가<br><code># 50 20 * * 1 open -a OBS --args --startrecording</code></li>
                   <li>2. 완전 삭제: 해당 줄 전체 삭제</li>
                 </ul>
               </li>
@@ -415,7 +425,7 @@
             <h3>녹화 방법 (세팅 완료 후)</h3>
             <div class="alert alert-info" style="margin-bottom:16px;">
               <span class="alert-icon">💡</span>
-              <span>STEP 6 자동 실행 설정을 완료하셨다면, <strong>멘토링 시작 시간에 OBS가 자동으로 켜지고 녹화가 자동으로 시작됩니다.</strong> OBS 하단의 녹화 카운터를 확인해 주세요.</span>
+              <span>STEP 6 자동 실행 설정을 완료하셨다면, <strong>멘토링 시작 시간에 OBS가 자동으로 켜지고 녹화가 자동으로 시작됩니다.<br></strong> OBS 하단의 녹화 카운터를 확인해 주세요.</span>
             </div>
             <ul class="bullet-list">
               <li><span class="li-main">멘토링 종료 후 '녹화 중단' 버튼 또는 F9 키(Mac: fn + F9)를 눌러 녹화를 종료합니다.</span></li>
@@ -423,7 +433,7 @@
             </ul>
             <div class="alert alert-warn" style="margin-top:16px;">
               <span class="alert-icon">⚠️</span>
-              <span>업로드 완료 전에 PC를 종료하면 업로드가 중단될 수 있습니다. Google Drive 앱이 백그라운드에서 자동 업로드하므로 PC를 사용하면서 기다리셔도 됩니다.</span>
+              <span>업로드 완료 전에 PC를 종료하면 업로드가 중단될 수 있습니다.<br>Google Drive 앱이 백그라운드에서 자동 업로드하므로 PC를 사용하면서 기다리셔도 됩니다.</span>
             </div>
           </div>
         </div>
