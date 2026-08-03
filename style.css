@@ -1398,7 +1398,7 @@ section[id], h2[id], h3[id], .faq-item[id], .step-card[id] {
 .tl-item:last-child::before { display: none; }
 
 /* D-day 등 긴 라벨을 쓰는 변형 */
-.timeline.days { --tl-w: 46px; }
+.timeline.days { --tl-w: 54px; }
 .timeline.days .tl-num { border-radius: 14px; font-size: 10.5px; }
 
 /* 제목만 나열하는 요약용 변형 */
@@ -1449,6 +1449,7 @@ section[id], h2[id], h3[id], .faq-item[id], .step-card[id] {
   color: var(--accent);
   background: #eaf1fe;
   border: 1px solid rgba(79,142,247,.3);
+  white-space: nowrap;
 }
 
 .tl-body { padding-top: 3px; min-width: 0; }
