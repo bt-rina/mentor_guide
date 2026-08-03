@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STEP 4 · 강의 내용 숙지 및 과제 점검 · 멘토 가이드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="step-4">
+
+<!-- ============================================
+     TOPBAR — 브레드크럼 + 섹션 바로가기
+============================================ -->
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="crumb-home">
+      <span class="crumb-mark">bluetiger</span>
+      <span class="crumb-text">멘토 가이드</span>
+    </a>
+    <span class="crumb-sep">/</span>
+    <div class="crumb-drop" id="crumb-drop">
+      <button class="crumb-current" id="crumb-current" aria-expanded="false" aria-haspopup="true">
+        <span class="cc-label">STEP 4</span>
+        <span class="cc-title">강의 내용 숙지 및 과제 점검</span>
+        <span class="cc-arrow">▼</span>
+      </button>
+      <div class="crumb-menu" id="crumb-menu"></div>
+    </div>
+    <div class="topbar-spacer"></div>
+    <div class="topbar-search" data-search>
+      <input type="text" class="search-input" placeholder="🔍 가이드 전체 검색">
+      <div class="search-results"></div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-body">
+
+  <main class="main-content">
+
+    <div class="container">
+      <div class="page-hero">
+        <div class="section-label">Step 4</div>
+        <h1>강의 내용 숙지 및 과제 점검</h1>
+        <p class="hero-desc">
+          멘토링 전날까지 해당 주차의 정규수업을 확인하고, 제출된 과제를 미리 검토·평가합니다.
+        </p>
+      </div>
+    </div>
+
+    <!-- ========================================
+         주차별 일정
+    ======================================== -->
+    <section class="doc-section" id="schedule">
+      <div class="container">
+        <h2>주차별 진행 일정</h2>
+
+        <p class="cal-intro"><span style="font-size:16px;">멘토님은 <strong>개강일 이후 1주차 과제 피드백</strong>부터 참여하십니다.</span>
+          <br>수강생은 개강일에 OT 영상을 본 뒤 바로 1주차 정규수업을 수강합니다. <a href="https://bluetiger-student-guide.vercel.app/learning-routine.html" target="_blank" rel="noopener noreferrer">(수강생 학습 루틴)</a>
+          <br>월요일 멘토링 기준 예시입니다.</p>
+
+        <div class="week-calendar">
+          <table class="cal-table">
+            <colgroup>
+              <col><col style="width:160px"><col><col><col><col><col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td class="cal-event">수강생 개강일<br><span class="cal-sub">(OT 영상 시청)</span></td>
+                <td></td><td></td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td class="cal-event" style="color:var(--text3);">1주차 과제<br><span class="cal-sub">제출 마감</span></td>
+                <td class="cal-event" style="color:var(--accent);">1회차 멘토링<br><span class="cal-sub">(+ 아이스브레이킹)</span></td>
+                <td></td><td></td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td class="cal-event" style="color:var(--text3);">2주차 과제<br><span class="cal-sub">제출 마감</span></td>
+                <td class="cal-event" style="color:var(--accent);">2회차 멘토링</td>
+                <td></td><td></td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td class="cal-event" style="color:var(--text3);">3주차 과제<br><span class="cal-sub">제출 마감</span></td>
+                <td class="cal-event" style="color:var(--accent);">3회차 멘토링</td>
+                <td></td><td></td><td></td><td></td><td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="cal-note" style="margin-bottom:0;">멘토링은 <strong>개강일 다음 주차부터 종강일까지</strong> 진행됩니다. <strong>4주 과정</strong> 멘토님은 총 <strong>4회</strong>, <strong>8주 과정</strong> 멘토님은 총 <strong>8회</strong> 멘토링을 진행합니다.</p>
+      </div>
+    </section>
+
+    <!-- ========================================
+         사전 준비
+    ======================================== -->
+    <section class="doc-section" id="preview">
+      <div class="container">
+        <h2>멘토링 전 준비</h2>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>사전 강의 내용 숙지</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">LMS 사이트 &gt; 나의 강의실 &gt; '수강 중인 과정'에서 담당 클래스/기수 강의실에 입장합니다.</span></li>
+              <li><span class="li-main">'강의목차'에서 정규수업 영상을 숙지하고, 강의자료 및 과제를 확인합니다.</span></li>
+            </ul>
+            <img src="lecture-preview.png" alt="LMS 강의실 강의목차 화면" style="width: 100%; margin: 16px 0;">
+            <a href="https://lms.feedbluetiger.com/member/login.jsp" target="_blank" class="download-link">
+              🔗 LMS 사이트
+            </a>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>사전 과제 점검</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">교육통합관리시스템 &gt; 통합과제관리에 접속합니다.</span></li>
+              <li><span class="li-main">우측 '평가하기' 버튼으로 담당 수강생의 제출 과제를 검토합니다.</span></li>
+              <li><span class="li-main">제출한 과제에 <strong>100점</strong>을 입력하고, 미리 전달할 내용을 평가의견란에 작성합니다.</span></li>
+              <li><span class="li-main">평가 기입 후 출석부에서 해당 주차 과제 제출 여부를 체크합니다.</span></li>
+            </ul>
+
+            <div class="alert alert-warn">
+              <span class="alert-icon">⚠️</span>
+              <ul class="bullet-list" style="color:inherit;">
+                <li><span class="li-main">과제 제출 여부가 참여율에 반영되도록 점수 기입을 안내드리고 있습니다. <strong>반드시 100점을 기입</strong>해 주세요.</span></li>
+                <li><span class="li-main">출석부의 멘토링은 자동 체크되지만, 과제는 직접 체크해야 합니다.</span></li>
+              </ul>
+            </div>
+            <img src="assignment-review.png" alt="통합과제관리 평가 화면" style="width: 100%; margin: 16px 0;">
+            <a href="https://lms.feedbluetiger.com/tutor/" target="_blank" class="download-link">
+              🔗 LMS 교육통합관리시스템
+            </a>
+            <a href="https://script.google.com/a/macros/feedbluetiger.com/s/AKfycbw-IpTHvhDd9rlLNU07GKerz7r_-pN4veVyI2G_yJB_2Yf2Cm6yx5fRKy13EfLEhuck/exec" target="_blank" class="download-link">
+              🔗 출석부
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         추가 기능
+    ======================================== -->
+    <section class="doc-section" id="extra-features">
+      <div class="container">
+        <h2>교육통합관리시스템의 추가 기능</h2>
+        <div style="color:var(--text2);display:flex;flex-direction:column;gap:20px;">
+          <div>
+            <div style="font-weight:700;margin-bottom:8px;">1. 수강생별교육현황</div>
+            <ul class="bullet-list">
+              <li><span class="li-main">수강생 이름을 클릭해 연락처 등 정보를 확인합니다.</span></li>
+              <li><span class="li-main">'진도율'은 정규수업 수강 및 과제 제출 종합 참여율이며, '과제' 열에서 제출 여부와 점수를 확인합니다.</span></li>
+              <li><span class="li-main">수료 기준은 <strong>진도율 80% 이상 및 전주차 과제 제출</strong>입니다.</span></li>
+            </ul>
+          </div>
+          <div>
+            <div style="font-weight:700;margin-bottom:8px;">2. 과정게시판관리</div>
+            <ul class="bullet-list">
+              <li><span class="li-main">'Q&amp;A'에서 담당 수강생이 강의 내용 또는 과제와 관련되어 LMS 사이트에 올린 질문을 확인하고, <strong>24시간 이내</strong>에 답변합니다.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <nav class="page-pager" id="page-pager">
+        <a class="pager-link prev" href="step-3-missions.html">
+          <span class="pager-dir">← 이전</span>
+          <span class="pager-title">STEP 3 · 멘토 필수 미션</span>
+        </a>
+        <a class="pager-link next" href="step-5-mentoring.html">
+          <span class="pager-dir">다음 →</span>
+          <span class="pager-title">STEP 5 · 멘토링 진행</span>
+        </a>
+      </nav>
+    </div>
+
+  </main>
+</div>
+
+<div style="width:100%;height:1px;background:rgba(0, 0, 0, 0.15);"></div>
+<div style="background-color: #f8f8f8;">
+  <footer style="padding: 26px 24px;">
+    <p><strong>주식회사 블루타이거</strong> · 멘토 가이드</p>
+    <p style="margin-top:8px;">문의: 010-9917-2415</p>
+  </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

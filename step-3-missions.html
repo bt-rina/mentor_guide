@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STEP 3 · 멘토 필수 미션 · 멘토 가이드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="step-3">
+
+<!-- ============================================
+     TOPBAR — 브레드크럼 + 섹션 바로가기
+============================================ -->
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="crumb-home">
+      <span class="crumb-mark">bluetiger</span>
+      <span class="crumb-text">멘토 가이드</span>
+    </a>
+    <span class="crumb-sep">/</span>
+    <div class="crumb-drop" id="crumb-drop">
+      <button class="crumb-current" id="crumb-current" aria-expanded="false" aria-haspopup="true">
+        <span class="cc-label">STEP 3</span>
+        <span class="cc-title">멘토 필수 미션</span>
+        <span class="cc-arrow">▼</span>
+      </button>
+      <div class="crumb-menu" id="crumb-menu"></div>
+    </div>
+    <div class="topbar-spacer"></div>
+    <div class="topbar-search" data-search>
+      <input type="text" class="search-input" placeholder="🔍 가이드 전체 검색">
+      <div class="search-results"></div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-body">
+
+  <main class="main-content">
+
+    <div class="container">
+      <div class="page-hero">
+        <div class="section-label">Step 3</div>
+        <h1>🎯 멘토 필수 미션</h1>
+        <p class="hero-desc">
+          개강 전에 <strong>반드시 완료해야 하는 2가지 미션</strong>입니다. 각각 기한이 다르니 일정에 맞춰 진행해 주세요.
+        </p>
+      </div>
+    </div>
+
+    <!-- ==========================================================
+         두 미션 요약 + 개강 첫 주 흐름
+    ========================================================== -->
+    <section class="doc-section" id="first-week" style="padding-top:34px;">
+      <div class="container">
+
+        <div class="mission-summary">
+          <a class="ms-card" href="#mission-1">
+            <span class="ms-num">MISSION 1</span>
+            <span class="ms-title">자동 녹화 테스트 제출</span>
+            <span class="ms-when">개강 1일 전까지</span>
+          </a>
+          <a class="ms-card" href="#mission-2">
+            <span class="ms-num">MISSION 2</span>
+            <span class="ms-title">자기소개 작성 및 첫인사</span>
+            <span class="ms-when">개강일</span>
+          </a>
+        </div>
+
+        <div class="timeline-panel">
+          <h2>개강 첫 주, 이렇게 진행됩니다</h2>
+          <div class="timeline days">
+            <div class="tl-item">
+              <div class="tl-num">D-7</div>
+              <div class="tl-body">
+                <div class="tl-title">디스코드 채널 권한 부여</div>
+                <div class="tl-desc">반별 소통 채널과 멘토님 전용 공지사항/문의사항 채널이 보이는지 확인해 주세요.</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-num">D-1</div>
+              <div class="tl-body">
+                <div class="tl-title">녹화 테스트 제출 완료</div>
+                <div class="tl-desc"><a href="#mission-1">MISSION 1</a> 완료 + 예약 시간 원복 확인</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-num">D-DAY</div>
+              <div class="tl-body">
+                <div class="tl-title">개강일: 자기소개와 첫인사</div>
+                <div class="tl-desc"><a href="#mission-2">MISSION 2</a> 완료 · 이날 수강생은 OT 영상을 보고 1주차 정규수업을 수강합니다.</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-num">주중</div>
+              <div class="tl-body">
+                <div class="tl-title">1주차 과제 독려</div>
+                <div class="tl-desc">과제 리마인드 · 스터디윗미 권장 · 질의응답</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-num">D+7</div>
+              <div class="tl-body">
+                <div class="tl-title">1회차 멘토링 진행</div>
+                <div class="tl-desc">아이스브레이킹 · 상세 절차는 <a href="step-5-mentoring.html">STEP 5</a>에서 확인</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         MISSION 1 — 자동 녹화 테스트 제출
+    ========================================================== -->
+    <section class="doc-section" id="mission-1">
+      <div class="container">
+
+        <div class="part-hero">
+          <div class="ph-top">
+            <span class="ph-num">MISSION 1</span>
+            <span class="ph-when">개강 1일 전까지 · 최초 1회</span>
+          </div>
+          <h2>자동 녹화 테스트 제출</h2>
+          <p class="ph-desc">
+            <a href="step-2-preparation.html">STEP 2</a>에서 세팅한 녹화 환경이 실제로 동작하는지 확인하는 미션입니다.
+            <strong>예약 시간을 10분 뒤로 임시 변경</strong>해서, 자동 실행 → 자동 녹화 → 종료 후 드라이브 업로드까지 스스로 돌아가는지 확인합니다.
+          </p>
+        </div>
+
+        <div class="alert alert-warn" style="margin:0 0 20px;">
+          <span class="alert-icon">⚠️</span>
+          <span>직접 OBS를 켜서 녹화하면 <strong>예약이 정상 동작하는지 확인할 수 없습니다.</strong> 반드시 예약을 통해 테스트해 주세요.</span>
+        </div>
+
+        <div class="step-card mission-card">
+          <div class="step-body">
+            <h3 id="mission" style="color:var(--accent2);">테스트 진행 순서</h3>
+
+            <div class="timeline accent2">
+              <div class="tl-item">
+                <div class="tl-num">1</div>
+                <div class="tl-body">
+                  <div class="tl-title">예약 시간을 10분 뒤로 임시 변경하고 화면 캡처하기</div>
+                  <div class="tl-desc">
+                    <strong>Windows</strong> : 작업 스케줄러 → 만들어 둔 작업 더블클릭 → '트리거' 탭 → 편집 → 시간을 10분 뒤로, 요일은 <strong>오늘 요일</strong>에 체크<br>
+                    <strong>Mac</strong> : 터미널에서 <code>crontab -e</code> 입력 → 키보드 <strong>i</strong> 키 클릭 → 분, 시, 요일을 오늘 기준 10분 뒤로 수정 → <strong>Esc</strong> → <code>:wq</code> 입력
+                    <br><br><strong style="color:var(--accent2);">설정을 마친 화면(예약 시각이 보이는 화면)을 캡처해서 저장해 두세요.</strong> 7번에서 녹화본과 함께 드라이브에 제출합니다.
+                    <div class="img-row" style="margin-top:12px;align-items:flex-start;">
+                      <div style="flex:1;min-width:0;">
+                        <img src="window_step_trigger.png" alt="Windows 작업 스케줄러 트리거 탭에서 예약 시각 확인" class="step-img" style="width:100%;margin:0;">
+                        <div style="font-size:11.5px;color:var(--text3);margin-top:6px;">🖥 Windows · 작업 스케줄러 &gt; 해당 작업 속성 &gt; <strong>'트리거' 탭</strong></div>
+                      </div>
+                      <div style="flex:1;min-width:0;">
+                        <img src="mac_step_6-2-2.png" alt="Mac crontab 에 예약 시각을 입력한 화면" class="step-img" style="width:100%;margin:0;">
+                        <div style="font-size:11.5px;color:var(--text3);margin-top:6px;">🍎 Mac · 터미널 <code>crontab -e</code> <strong>입력 화면</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">2</div>
+                <div class="tl-body">
+                  <div class="tl-title">OBS를 완전히 종료하고 대기</div>
+                  <div class="tl-desc">PC는 켜 둔 채로, 잠금 화면/절전 모드로 들어가지 않도록 해주세요.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">3</div>
+                <div class="tl-body">
+                  <div class="tl-title">자동 실행·녹화 시작 확인</div>
+                  <div class="tl-desc">설정한 시간에 OBS가 자동으로 실행되고, OBS 하단의 녹화 카운터가 흐르면 성공입니다. 실행/녹화가 되지 않을 경우 <a href="step-2-preparation.html#auto-record-windows">STEP 2의 자동 실행 설정</a>을 다시 확인해 주세요.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">4</div>
+                <div class="tl-body">
+                  <div class="tl-title">2분 이상 테스트 녹화</div>
+                  <div class="tl-desc">디스코드 음성 채널에서 1) 마이크, 2) 영상·음악 재생(스피커), 3) 화면 공유 또는 캠이 모두 한 번씩 테스트되도록 합니다.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">5</div>
+                <div class="tl-body">
+                  <div class="tl-title">녹화 종료</div>
+                  <div class="tl-desc">'녹화 중단' 버튼 또는 F9(Mac: fn + F9) 키로 종료합니다.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">6</div>
+                <div class="tl-body">
+                  <div class="tl-title">드라이브 자동 업로드 확인</div>
+                  <div class="tl-desc">드라이브 앱에서 동기화되어 멘토님 전용 폴더에 파일이 생성되면, <a href="https://drive.google.com/drive/folders/0AFylNpHr4ldbUk9PVA" target="_blank" rel="noopener noreferrer">드라이브 웹</a>에서 <strong>소리 출력과 화면 재생이 정상적인지</strong> 확인합니다.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">7</div>
+                <div class="tl-body">
+                  <div class="tl-title">1번에서 캡처한 예약 화면을 같은 폴더에 업로드</div>
+                  <div class="tl-desc">녹화본이 올라간 <strong>같은 드라이브 폴더</strong>에 캡처 이미지를 함께 올려 주세요.
+                    <br>OBS 녹화본의 파일명은 <strong>녹화가 시작된 시각</strong>입니다. 이 시각이 캡처해 둔 예약 시각과 맞으면,
+                    수동이 아니라 <strong>예약대로 자동 녹화되었다</strong>는 점이 확인됩니다.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">8</div>
+                <div class="tl-body">
+                  <div class="tl-title">예약 시간을 실제 멘토링 시간으로 원복 ⚠️</div>
+                  <div class="tl-desc">마지막으로, 테스트용으로 바꿔 둔 예약을 <strong>멘토링이 진행되는 요일의 수업 시작 10분 전</strong>으로 반드시 되돌려 주세요.
+                    <br>이 단계를 놓치면 실제 멘토링 날 녹화가 시작되지 않습니다.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="alert alert-accent2" style="margin-top:12px;">
+              <span class="alert-icon">📅</span>
+              <span>제출 기한: <strong>개강 1일 전</strong>까지
+                <br>미제출 시 운영팀이 별도 확인 연락을 드릴 예정입니다.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         MISSION 2 — 자기소개 작성 및 첫인사
+    ========================================================== -->
+    <section class="doc-section" id="mission-2">
+      <div class="container">
+
+        <div class="part-hero blue">
+          <div class="ph-top">
+            <span class="ph-num">MISSION 2</span>
+            <span class="ph-when">개강일 · 약 15분</span>
+          </div>
+          <h2>자기소개 작성 및 첫인사</h2>
+          <p class="ph-desc">
+            수강생이 멘토님을 <strong>처음 만나는 순간</strong>입니다.
+            개강일에 맞춰 <strong>LMS 자유게시판</strong>과 <strong>디스코드 소통 채널</strong> 두 곳에 인사를 남겨 주세요.
+          </p>
+        </div>
+
+        <div class="info-grid" style="margin-bottom:22px;">
+          <div class="info-box">
+            <div class="ib-title">📝 LMS 강의실 자유게시판</div>
+            <ul>
+              <li><strong>기록용</strong> : 언제든 다시 찾아볼 수 있는 글</li>
+              <li>경력·전문 분야 중심으로 조금 더 자세히 소개합니다.</li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <div class="ib-title">💬 디스코드 소통 채널</div>
+            <ul>
+              <li><strong>대화용</strong> : 짧고 편안한 톤으로 소통</li>
+              <li>첫 멘토링 일시를 안내하고, 질문 창구를 엽니다.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3 id="intro-lms">1. LMS 강의실 자유게시판 · 자기소개 작성</h3>
+            <div style="font-weight:700;font-size:13px;color:var(--accent);margin-bottom:8px;">접속 경로</div>
+            <ul class="bullet-list" style="margin-bottom:18px;">
+              <li><span class="li-main">LMS 사이트 로그인 &gt; 나의 강의실 &gt; 담당 클래스/기수 강의실 입장 &gt; <strong>자유게시판</strong> &gt; 글쓰기</span></li>
+            </ul>
+
+            <div style="font-weight:700;font-size:13px;color:var(--accent);margin-bottom:8px;">글에 담기면 좋은 항목</div>
+            <ul class="bullet-list">
+              <li><span class="li-main"><strong>성함(또는 활동명)과 한 줄 소개</strong></span></li>
+              <li><span class="li-main"><strong>현재 직무와 경력 연차</strong> (공개 가능한 범위 내)</span></li>
+              <li><span class="li-main"><strong>주요 작업 분야 또는 프로젝트</strong></span></li>
+              <li><span class="li-main"><strong>특히 도움드릴 수 있는 주제</strong> : 툴 활용, 포트폴리오, 실무 프로세스, 취업 고민 등</span></li>
+              <li><span class="li-main"><strong>멘토링 진행 요일과 시간</strong></span></li>
+            </ul>
+
+            <a href="https://lms.feedbluetiger.com/member/login.jsp" target="_blank" rel="noopener noreferrer" class="download-link">
+              🔗 LMS 사이트
+            </a>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3 id="intro-discord">2. 디스코드 소통 채널 · 첫인사</h3>
+
+            <div style="font-weight:700;font-size:13px;color:var(--accent);margin-bottom:8px;">보내기 전 확인</div>
+            <ul class="bullet-list" style="margin-bottom:18px;">
+              <li><span class="li-main">서버 닉네임이 <strong>"성함(멘토)"</strong> 형식인지 확인</span></li>
+              <li><span class="li-main">담당하는 <strong>반별 소통 채널</strong>이 맞는지 확인 (여러 반을 맡으신 경우 특히 주의)</span></li>
+            </ul>
+
+            <div style="font-weight:700;font-size:13px;color:var(--accent);margin-bottom:8px;">첫인사에 담을 내용</div>
+            <ul class="bullet-list">
+              <li><span class="li-main"><strong>환영 인사와 간단한 자기소개</strong> : 자세한 소개는 LMS 게시글로 안내</span></li>
+              <li><span class="li-main"><strong>첫 멘토링 일시 리마인드</strong> : 멘토링은 개강일의 다음 주차부터 시작됩니다.</span></li>
+              <li><span class="li-main"><strong>질문 창구 안내</strong> : 과제 질문은 개인 DM보다 <strong>반별 소통 채널에</strong> 남기도록 안내해 주세요. 한 사람의 질문이 반 전체에 도움이 됩니다.</span></li>
+              <li><span class="li-main"><strong>수강생 자기소개 유도</strong></span></li>
+              <li><span class="li-main"><strong>답하기 쉬운 질문 하나</strong> : 첫 반응을 이끌어내는 가벼운 질문</span></li>
+            </ul>
+
+            <a href="https://discord.gg/ZK5g9pEeee" target="_blank" rel="noopener noreferrer" class="download-link">
+              🔗 디스코드 서버
+            </a>
+          </div>
+        </div>
+
+        <div class="alert alert-accent2">
+          <span class="alert-icon">✅</span>
+          <span><strong>개강일까지 이 두 가지를 반드시 완료해 주세요.</strong>
+            <br>1. 녹화 테스트 제출 + 예약 시간 원복 (MISSION 1)<br>2. LMS 자기소개 + 디스코드 첫인사 (MISSION 2)</span>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container">
+      <nav class="page-pager" id="page-pager">
+        <a class="pager-link prev" href="step-2-preparation.html">
+          <span class="pager-dir">← 이전</span>
+          <span class="pager-title">STEP 2 · 사전 준비사항</span>
+        </a>
+        <a class="pager-link next" href="step-4-lecture-assignment.html">
+          <span class="pager-dir">다음 →</span>
+          <span class="pager-title">STEP 4 · 강의 내용 숙지 및 과제 점검</span>
+        </a>
+      </nav>
+    </div>
+
+  </main>
+</div>
+
+<div style="width:100%;height:1px;background:rgba(0, 0, 0, 0.15);"></div>
+<div style="background-color: #f8f8f8;">
+  <footer style="padding: 26px 24px;">
+    <p><strong>주식회사 블루타이거</strong> · 멘토 가이드</p>
+    <p style="margin-top:8px;">문의: 010-9917-2415</p>
+  </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

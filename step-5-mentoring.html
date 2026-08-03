@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STEP 5 · 멘토링 진행 · 멘토 가이드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="step-5">
+
+<!-- ============================================
+     TOPBAR — 브레드크럼 + 섹션 바로가기
+============================================ -->
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="crumb-home">
+      <span class="crumb-mark">bluetiger</span>
+      <span class="crumb-text">멘토 가이드</span>
+    </a>
+    <span class="crumb-sep">/</span>
+    <div class="crumb-drop" id="crumb-drop">
+      <button class="crumb-current" id="crumb-current" aria-expanded="false" aria-haspopup="true">
+        <span class="cc-label">STEP 5</span>
+        <span class="cc-title">멘토링 진행</span>
+        <span class="cc-arrow">▼</span>
+      </button>
+      <div class="crumb-menu" id="crumb-menu"></div>
+    </div>
+    <div class="topbar-spacer"></div>
+    <div class="topbar-search" data-search>
+      <input type="text" class="search-input" placeholder="🔍 가이드 전체 검색">
+      <div class="search-results"></div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-body">
+
+  <main class="main-content">
+
+    <div class="container">
+      <div class="page-hero">
+        <div class="section-label">Step 5</div>
+        <h1>멘토링 진행</h1>
+        <p class="hero-desc">
+          수업 1시간 전 공지부터 종료 후 출결 점검까지, 멘토링 당일의 진행 순서입니다.
+        </p>
+      </div>
+    </div>
+
+    <!-- ========================================
+         수업 전
+    ======================================== -->
+    <section class="doc-section" id="before-class">
+      <div class="container">
+        <h2>수업 전</h2>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>1. 수업 1시간 전</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">진행 일시를 디스코드 소통 채널에 전달해 참여를 독려합니다.</span></li>
+              <li><span class="li-main">과제 제출자를 기준으로 멘토링 순서를 지정합니다. (제출순, 랜덤순 등)</span></li>
+              <li><span class="li-main">수강생 일정에 따라 순서는 유동적으로 조율할 수 있습니다.</span></li>
+            </ul>
+            <div class="alert alert-info">
+              <span class="alert-icon">🎥</span>
+              <span>OBS 자동 실행을 설정해두었기 때문에, 수업 <strong>10분 전</strong>에 OBS가 켜지고 녹화가 시작됩니다. (<a href="step-2-preparation.html#auto-record-windows">설정 방법</a>)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         수업 중
+    ======================================== -->
+    <section class="doc-section" id="during-class">
+      <div class="container">
+        <h2>수업 중</h2>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>2. 수업 진행 중</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">10분 전까지 음성 채널에 참여해 네트워크와 마이크 환경을 정비합니다.</span></li>
+              <li><span class="li-main">OBS 녹화 카운터가 동작 중인지 확인합니다. 안 되어 있으면 F9 (Mac: fn + F9)로 수동 시작합니다.</span></li>
+              <li><span class="li-main">간단한 인사 후 순서대로 과제 피드백과 사전질문 답변을 진행합니다.</span></li>
+              <li><span class="li-main">피드백은 모두 한 공간에 모여 진행합니다. 수강생은 다른 사람의 피드백에서도 아이디어를 얻습니다.</span></li>
+            </ul>
+            <div class="alert alert-info">
+              <span class="alert-icon">💡</span>
+              <span>미참여 수강생은 피드백하지 않는 것이 원칙이나, 특이사항이 있으면 실시간 보강으로 제공할 수 있습니다.
+                <br>보강은 동일한 음성 채널에서 진행하며, 담당자에게 일시와 명단을 미리 공유해 주세요.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3 id="mic-trouble">목소리가 들리지 않을 때</h3>
+            <p style="font-size:13.5px;color:var(--text3);margin-bottom:14px;">
+              수강생이 "소리가 안 들려요"라고 하거나, 반대로 수강생 목소리가 들리지 않을 때 아래 순서로 확인해 주세요.
+            </p>
+            <ul class="bullet-list">
+              <li><span class="li-main"><strong>디스코드 음성 설정 확인</strong> : 좌측 하단 마이크 아이콘 옆 화살표 &gt; 음성 설정</span>
+                <ul>
+                  <li>1. <strong>'눌러서 말하기(Push to Talk)'</strong>가 켜져 있으면 꺼 주세요.</li>
+                  <li>2. 입력 장치가 실제 사용하는 마이크로 지정되어 있는지 함께 확인합니다.</li>
+                </ul>
+              </li>
+              <li><span class="li-main"><strong>기기의 마이크 권한 확인</strong> : 디스코드에 대한 마이크 권한이 꺼져 있으면 소리가 전달되지 않습니다.</span>
+                <ul>
+                  <li>Windows: 설정 &gt; 개인 정보 및 보안 &gt; 마이크 &gt; Discord 켜기</li>
+                  <li>Mac: 시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 마이크 &gt; Discord 체크</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="alert alert-info">
+              <span class="alert-icon">🎙</span>
+              <span>멘토님 목소리가 <strong>수업에서는 들리는데 녹화본에만 없다면</strong> 디스코드가 아니라 OBS 설정 문제입니다.
+                <a href="step-2-preparation.html#audio-setup">STEP 2 · 오디오 세팅</a>을 확인해 주세요.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         수업 후
+    ======================================== -->
+    <section class="doc-section" id="after-class">
+      <div class="container">
+        <h2>수업 후</h2>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3>3. 수업 종료 후</h3>
+            <ul class="bullet-list">
+              <li><span class="li-main">녹화를 종료합니다. ('녹화 중단' 버튼 또는 F9 / Mac: fn + F9)</span>
+                <ul>
+                  <li>드라이브로 자동 업로드되므로, 업로드가 끝나기 전 PC를 종료하지 않도록 유의해 주세요.</li>
+                </ul>
+              </li>
+              <li><span class="li-main">자동 기록된 멘토링 출결을 점검합니다. (출석 = 1, 결석 = 공백)</span>
+                <ul>
+                  <li>로그인 시 강사코드는 전화번호 뒤 5자리입니다.</li>
+                  <li>수강생이 서버 이름을 "이름_전화번호 뒤 4자리"로 설정해야 자동 출결이 가능합니다.</li>
+                </ul>
+              </li>
+              <li><span class="li-main">불참자에게는 소통 채널에서 정규수업 수강과 과제 진행을 독려합니다.</span></li>
+            </ul>
+            <a href="https://script.google.com/a/macros/feedbluetiger.com/s/AKfycbw-IpTHvhDd9rlLNU07GKerz7r_-pN4veVyI2G_yJB_2Yf2Cm6yx5fRKy13EfLEhuck/exec" target="_blank" class="download-link">
+              🔗 출석부
+            </a>
+            <div class="alert alert-info" style="margin-top:16px;">
+              <span class="alert-icon">💡</span>
+              <span>소통 채널 및 멘토링 채널은 <strong>종강 1주 후</strong> 삭제됩니다.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         운영 특이사항
+    ======================================== -->
+    <section class="doc-section" id="operations">
+      <div class="container">
+        <h2>운영 특이사항</h2>
+
+        <div class="step-card">
+          <div class="step-body">
+            <h3 id="schedule-change">멘토링 일정 변경이 필요한 경우</h3>
+
+            <div class="alert alert-danger" style="margin-top:0;">
+              <span class="alert-icon">🚫</span>
+              <span>개인 사정과 같은 사유로 인한 멘토링 일정 변경은 <strong>원칙적으로 불가</strong>합니다.
+                <br>천재지변, 갑작스러운 건강 이상, 본업의 불가피한 상황 등의 경우에만 아래 절차에 따라 진행해 주세요.</span>
+            </div>
+
+            <div class="timeline" style="margin-top:20px;">
+              <div class="tl-item">
+                <div class="tl-num">1</div>
+                <div class="tl-body">
+                  <div class="tl-desc">멘토님이 운영팀에 변경 사유와 멘토링 가능한 일정을 <strong>먼저</strong> 공유해 주세요.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">2</div>
+                <div class="tl-body">
+                  <div class="tl-desc"><strong>운영팀이 검토 후 일정을 확정</strong>합니다.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">3</div>
+                <div class="tl-body">
+                  <div class="tl-desc">확정된 일정을 멘토님께 먼저 안내드립니다.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">4</div>
+                <div class="tl-body">
+                  <div class="tl-desc">운영팀이 디스코드 소통 채널에서 수강생 및 담당 컨설턴트에게 <strong>1차로 공지</strong>합니다.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-num">5</div>
+                <div class="tl-body">
+                  <div class="tl-desc">멘토님이 소통 채널에서 수강생에게 사과문과 함께 변경 일정을 <strong>2차 공지</strong>해 주세요.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="alert alert-warn">
+              <span class="alert-icon">⚠️</span>
+              <span>변경된 일정에 참여가 어려운 수강생이 있을 경우, 해당 수강생에게는 <strong>멘토님이 개별적으로 피드백을 제공</strong>해 주셔야 합니다.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <nav class="page-pager" id="page-pager">
+        <a class="pager-link prev" href="step-4-lecture-assignment.html">
+          <span class="pager-dir">← 이전</span>
+          <span class="pager-title">STEP 4 · 강의 내용 숙지 및 과제 점검</span>
+        </a>
+        <a class="pager-link next" href="step-6-encouragement.html">
+          <span class="pager-dir">다음 →</span>
+          <span class="pager-title">STEP 6 · 수강생 참여 독려</span>
+        </a>
+      </nav>
+    </div>
+
+  </main>
+</div>
+
+<div style="width:100%;height:1px;background:rgba(0, 0, 0, 0.15);"></div>
+<div style="background-color: #f8f8f8;">
+  <footer style="padding: 26px 24px;">
+    <p><strong>주식회사 블루타이거</strong> · 멘토 가이드</p>
+    <p style="margin-top:8px;">문의: 010-9917-2415</p>
+  </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
